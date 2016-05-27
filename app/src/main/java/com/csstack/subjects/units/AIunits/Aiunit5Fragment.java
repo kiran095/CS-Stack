@@ -1,4 +1,4 @@
-package com.csstack.subjects.units;
+package com.csstack.subjects.units.AIunits;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.csstack.R;
-import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.florent37.materialviewpager.adapter.RecyclerViewMaterialAdapter;
 
 import java.util.ArrayList;
@@ -18,7 +17,7 @@ import java.util.ArrayList;
 /**
  * Created by nandhu on 23/5/16.
  */
-public class AIunit1Fragment extends Fragment {
+public class Aiunit5Fragment extends Fragment {
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     ArrayList<String> points;
@@ -67,10 +66,7 @@ public class AIunit1Fragment extends Fragment {
         mRecyclerView=(RecyclerView)view.findViewById(R.id.recyclerView);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         mAdapter=new RecyclerViewMaterialAdapter(new pointsAdapter(points));
-        mRecyclerView.setAdapter(mAdapter);
-        MaterialViewPagerHelper.registerRecyclerView(getActivity(),mRecyclerView,null);
     }
-
 
     private class pointsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         public ArrayList<String> dataset;
@@ -82,7 +78,7 @@ public class AIunit1Fragment extends Fragment {
 
         @Override
         public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            view=LayoutInflater.from(parent.getContext()).inflate(R.layout.tools_list_item_card_small,parent,false);
+         view=LayoutInflater.from(parent.getContext()).inflate(R.layout.tools_list_item_card_small,parent,false);
             return new RecyclerView.ViewHolder(view) {
 
 
@@ -99,4 +95,5 @@ public class AIunit1Fragment extends Fragment {
         public int getItemCount() {
             return dataset.size();
         }
-    }}
+    }
+}

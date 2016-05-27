@@ -1,4 +1,4 @@
-package com.csstack.subjects.units;
+package com.csstack.subjects.units.AIunits;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,7 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.csstack.R;
-import com.github.florent37.materialviewpager.adapter.RecyclerViewMaterialAdapter;
+import com.csstack.subjects.units.pointsAdapter;
+import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 
 import java.util.ArrayList;
 
@@ -30,24 +31,28 @@ public class Aiunit2Fragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        points=new ArrayList<>(5);
+        points = new ArrayList<>(5);
         points.add("INtroduction");
         points.add("HI");
         points.add("HI");
         points.add("HI");
-        points.add("HI");points.add("HI");
         points.add("HI");
         points.add("HI");
         points.add("HI");
-
-
-
+        points.add("HI");
+        points.add("HI");
+        mAdapter = new pointsAdapter(points);
     }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return  inflater.inflate(R.layout.unit_list_layout,container,false);
+        View view = inflater.inflate(R.layout.unit_list_layout, container, false);
+        mRecyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        mRecyclerView.setAdapter(mAdapter);
+        MaterialViewPagerHelper.registerRecyclerView(getActivity(), mRecyclerView, null);
+        return view;
     }
 
     @Override
@@ -63,37 +68,8 @@ public class Aiunit2Fragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        mRecyclerView=(RecyclerView)view.findViewById(R.id.recyclerView);
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        mAdapter=new RecyclerViewMaterialAdapter(new pointsAdapter(points));
-    }
 
-    private class pointsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
-        public ArrayList<String> dataset;
-        public View view;
-        public pointsAdapter(ArrayList<String> points) {
-            dataset=points;
-        }
-
-
-        @Override
-        public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            view=LayoutInflater.from(parent.getContext()).inflate(R.layout.tools_list_item_card_small,parent,false);
-            return new RecyclerView.ViewHolder(view) {
-
-
-
-            };
-        }
-
-        @Override
-        public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-
-        }
-
-        @Override
-        public int getItemCount() {
-            return dataset.size();
-        }
     }
 }
+
+

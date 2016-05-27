@@ -1,4 +1,4 @@
-package com.csstack.subjects.units;
+package com.csstack.subjects.units.AIunits;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -17,7 +17,7 @@ import java.util.ArrayList;
 /**
  * Created by nandhu on 23/5/16.
  */
-public class Aiunit3Fragment extends Fragment {
+public class Aiunit4Fragment extends Fragment {
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     ArrayList<String> points;

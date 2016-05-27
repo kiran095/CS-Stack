@@ -1,4 +1,4 @@
-package com.csstack.subjects.units;
+package com.csstack.subjects.units.AIunits;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -17,7 +17,7 @@ import java.util.ArrayList;
 /**
  * Created by nandhu on 23/5/16.
  */
-public class Aiunit5Fragment extends Fragment {
+public class Aiunit3Fragment extends Fragment {
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     ArrayList<String> points;
@@ -78,7 +78,7 @@ public class Aiunit5Fragment extends Fragment {
 
         @Override
         public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-         view=LayoutInflater.from(parent.getContext()).inflate(R.layout.tools_list_item_card_small,parent,false);
+            view=LayoutInflater.from(parent.getContext()).inflate(R.layout.tools_list_item_card_small,parent,false);
             return new RecyclerView.ViewHolder(view) {
 
 
