@@ -1,11 +1,9 @@
 package com.csstack.subjects;
 import android.content.Context;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
@@ -19,14 +17,12 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.csstack.R;
-import com.csstack.ViewPagerAdapter;
 import com.csstack.subjects.units.AIunits.AIunit1Fragment;
 import com.csstack.subjects.units.AIunits.Aiunit2Fragment;
 import com.csstack.subjects.units.AIunits.Aiunit3Fragment;
 import com.csstack.subjects.units.AIunits.Aiunit4Fragment;
 import com.csstack.subjects.units.AIunits.Aiunit5Fragment;
 import com.github.florent37.materialviewpager.MaterialViewPager;
-import com.github.ksoichiro.android.observablescrollview.ObservableScrollView;
 
 /**
  * Created by nandhu on 5/5/16.
@@ -147,70 +143,80 @@ public class AIFrag extends Fragment {
     public void onStop() {
         super.onStop();
     }
+    public class ViewPagerAdapter extends FragmentStatePagerAdapter {
+
+        public  FragmentManager mchildFragmentmanager;
+
+        public ViewPagerAdapter(FragmentManager fm) {
+            super(fm);
+            mchildFragmentmanager = fm;
+        }
 
 
-    /**
-     * private class CustomAdapter extends PagerAdapter {
-     * private  int NUM_OF_PAGES=5;
-     * <p/>
-     * private  Context mContext;
-     * public View weblayout;
-     *
-     * @Override public int getCount() {
-     * return NUM_OF_PAGES;
-     * }
-     * @Override public boolean isViewFromObject(View view, Object object) {
-     * return view==object;
-     * }
-     * @Override public void destroyItem(ViewGroup container, int position, Object object) {
-     * container.removeView((View)object);
-     * }
-     * @Override public Parcelable saveState() {
-     * return super.saveState();
-     * }
-     * @Override public Object instantiateItem(ViewGroup container, int position) {
-     * Log.d("COM_CSTACK","INStantiateing item");
-     * weblayout=LayoutInflater.from(mContext).inflate(R.layout.smaple,container,false);
-     * //     ObservableScrollView scrollView=(ObservableScrollView)weblayout.findViewById(R.id.scrollView);
-     * MaterialViewPagerHelper.registerScrollView(getActivity(),scrollView,null);
-     * container.addView(weblayout);
-     * <p/>
-     * return weblayout;
-     * <p/>
-     * <p/>
-     * }
-     * @Override public CharSequence getPageTitle(int position) {
-     * if (position==0){
-     * Log.d("COM_CSTACK","Introduction returned");
-     * return "UNIT I";
-     * <p/>
-     * }
-     * if (position==1){
-     * return "Machine learning";
-     * <p/>
-     * }
-     * if (position==2){
-     * return "Knapsack problem";
-     * <p/>
-     * }
-     * if (position==3){
-     * return "Knowledge";
-     * <p/>
-     * }
-     * if (position==4){
-     * return "Learning";
-     * <p/>
-     * }
-     * return  "    " ;
-     * <p/>
-     * }
-     * <p/>
-     * public CustomAdapter(Context fm) {
-     * mContext=fm;
-     * Log.d("COM_CSTACK","Custom ADapter");
-     * }
-     * }
-     */
+
+
+        @Override
+        public Fragment getItem(int position) {
+            switch (position) {
+                case 0:
+                    return new AIunit1Fragment();
+
+                case 1:
+                    return new Aiunit2Fragment();
+
+                case 2:
+                    return new Aiunit3Fragment();
+
+
+                case 3:
+                    return new Aiunit4Fragment();
+
+                case 4:
+                    return new Aiunit5Fragment();
+
+            }
+            return null;
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            switch (position) {
+                case 0:
+                    return "UNIT I";
+
+                case 1:
+                    return "UNIT II";
+
+                case 2:
+                    return "UNIT III";
+
+                case 3:
+                    return "UNIT IV";
+
+                case 4:
+                    return "UNIT V";
+
+            }
+            return null;
+        }
+
+        @Override
+        public int getCount() {
+            return 5;
+        }
+
+        @Override
+        public void destroyItem(ViewGroup container, int position, Object object) {
+            //getChildFragmentManager().beginTransaction().detach(getChildFragmentManager().findFragmentById(container.getId())).commit();
+            //  getChildFragmentManager().beginTransaction().remove(
+
+            //  mchildFragmentmanager.beginTransaction().remove((Fragment) object).commit();
+
+        }
+
+
+    }
+
 
 
 

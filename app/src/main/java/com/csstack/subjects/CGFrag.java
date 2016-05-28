@@ -2,18 +2,14 @@
 package com.csstack. subjects;
 import android.content.Context;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.PagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -27,12 +23,7 @@ import com.csstack.subjects.units.CGunits.CG2;
 import com.csstack.subjects.units.CGunits.CG3;
 import com.csstack.subjects.units.CGunits.CG4;
 import com.csstack.subjects.units.CGunits.CG5;
-import com.csstack.subjects.units.pointsAdapter;
 import com.github.florent37.materialviewpager.MaterialViewPager;
-import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
-import com.github.florent37.materialviewpager.adapter.RecyclerViewMaterialAdapter;
-
-import java.util.ArrayList;
 
 
 /**
@@ -41,11 +32,15 @@ import java.util.ArrayList;
 public class CGFrag extends Fragment {
 
     //A view to hold unit list , each unit has 5 strings
-    public MaterialViewPager mViewPager;
-
-    ArrayList<String> sub_titles;
     public View layout;
+    public String CURRENT_PAGE="current_page";
+
+
+    public MaterialViewPager mViewPager;
     ActionBarDrawerToggle actionBarDrawerToggle;
+    FragmentStatePagerAdapter adapter;
+    public int cPage;
+
 
     @Override
     public void onDestroyView() {
@@ -56,24 +51,31 @@ public class CGFrag extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        Log.d("COM_CSTACK","Comptuer Graphcics");
+
+        Log.d("COM_CSTACK", "--->on Create view AI");
+
         layout = (View) inflater.inflate(R.layout.subject_layout, container, false);
-
-
-        mViewPager=(MaterialViewPager)layout.findViewById(R.id.materialViewPager);
-        Toolbar mToolbar=mViewPager.getToolbar();
+        mViewPager = (MaterialViewPager) layout.findViewById(R.id.materialViewPager);
+        Toolbar mToolbar = mViewPager.getToolbar();
         if (mToolbar != null) {
-            AppCompatActivity activity=(AppCompatActivity)getActivity();
+            AppCompatActivity activity = (AppCompatActivity) getActivity();
             activity.setSupportActionBar(mToolbar);
-            ActionBar actionBar=activity.getSupportActionBar();
-            actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setDisplayShowHomeEnabled(true);
-            actionBar.setDisplayShowTitleEnabled(true);
-            actionBar.setDisplayUseLogoEnabled(false);
-            actionBar.setHomeButtonEnabled(true);
+            ActionBar actionBar = activity.getSupportActionBar();
+            if (actionBar != null) {
+                actionBar.setDisplayHomeAsUpEnabled(true);
+                actionBar.setDisplayShowHomeEnabled(true);
+                actionBar.setDisplayShowTitleEnabled(true);
+                actionBar.setDisplayUseLogoEnabled(false);
+                actionBar.setHomeButtonEnabled(true);
+
+            } else {
+                Log.d("COM_CSTACK", "Action bar null");
+            }
 
         }
 
+
+        //Action bar and title hamburger icon set up--cannot be done in activity
 
         final DrawerLayout drawerLayout = (DrawerLayout) getActivity().findViewById(R.id.drawer_layout);
         actionBarDrawerToggle = new ActionBarDrawerToggle(getActivity(), drawerLayout, mToolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -86,18 +88,22 @@ public class CGFrag extends Fragment {
             }
         });
 
-       // FragmentPagerAdapter adapter = new UnitAdapter(getChildFragmentManager());
+        //Adapter for View pager
 
 
 
-        mViewPager.getViewPager().setAdapter(new CustomAdapter(getActivity()));
+        adapter = new ViewPagerAdapter(this.getChildFragmentManager());
+
+
+        mViewPager.getViewPager().setAdapter(adapter);
         mViewPager.getPagerTitleStrip().setViewPager(mViewPager.getViewPager());
         mViewPager.getPagerTitleStrip().setBottom(0);
-        TextView textView=(TextView) layout.findViewById(R.id.logo_white);
+
+        // tilte Customisation in header- view pager
+        TextView textView = (TextView) layout.findViewById(R.id.logo_white);
         textView.setText(R.string.cg);
 
         return layout;
-
 
 
     }
@@ -106,19 +112,24 @@ public class CGFrag extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        //we have a save instance state
 
-
-
+        if (savedInstanceState!=null){
+            Log.d("COM_CSTACK", "SAved instance exits");
+        }
     }
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
+        cPage=mViewPager.getViewPager().getCurrentItem();
+        outState.putInt(CURRENT_PAGE,cPage);
     }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
     }
 
     @Override
@@ -135,170 +146,80 @@ public class CGFrag extends Fragment {
     public void onStop() {
         super.onStop();
     }
-   public class CustomAdapter extends PagerAdapter {
-        private  int NUM_OF_PAGES=5;
+    public class ViewPagerAdapter extends FragmentStatePagerAdapter {
 
-        private  Context mContext;
-        public View weblayout;
-       public RecyclerView.Adapter mAdapter;
-       public RecyclerView mRecyclerView;
-        @Override
-        public int getCount() {
-            return NUM_OF_PAGES;
+        public  FragmentManager mchildFragmentmanager;
+
+        public ViewPagerAdapter(FragmentManager fm) {
+            super(fm);
+            mchildFragmentmanager = fm;
         }
 
-        @Override
-        public boolean isViewFromObject(View view, Object object) {
-            return view==object;
-        }
+
+
 
         @Override
-        public void destroyItem(ViewGroup container, int position, Object object) {
-            container.removeView((View)object);
-        }
+        public Fragment getItem(int position) {
+            switch (position) {
+                case 0:
+                    return new CG1();
 
-        @Override
-        public Parcelable saveState() {
-            return super.saveState();
-        }
+                case 1:
+                    return new CG2();
 
-        @Override
-        public Object instantiateItem(final ViewGroup container, int position) {
-             weblayout=LayoutInflater.from(mContext).inflate(R.layout.smaple,container,false);
-           mRecyclerView=(RecyclerView)weblayout.findViewById(R.id.rv);
-            mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-
-            ArrayList<String> su=new ArrayList<>(5);
-            su.add("hello");
-            su.add("hi");
-            su.add("what the fuck ");
-            su.add("hello fuck");
-            su.add("lofe is beautifl");
-            su.add("its how you see it");su.add("i m the greatest");
+                case 2:
+                    return new CG3();
 
 
+                case 3:
+                    return new CG4();
 
-            mRecyclerView.setAdapter(mAdapter);
+                case 4:
+                    return new CG5();
 
-            container.addView(weblayout);
-          //  MaterialViewPagerHelper.registerRecyclerView(getActivity(),mRecyclerView,null);
-            return weblayout;
-
-
-
-
+            }
+            return null;
         }
 
         @Override
         public CharSequence getPageTitle(int position) {
-            if (position==0){
-                return "UNIT I";
+            switch (position) {
+                case 0:
+                    return "UNIT I";
+
+                case 1:
+                    return "UNIT II";
+
+                case 2:
+                    return "UNIT III";
+
+                case 3:
+                    return "UNIT IV";
+
+                case 4:
+                    return "UNIT V";
 
             }
-            if (position==1){
-                return "UNIT II";
+            return null;
+        }
 
-            }
-            if (position==2){
-                return "UNIT III";
+        @Override
+        public int getCount() {
+            return 5;
+        }
 
-            }
-            if (position==3){
-                return "UNIT IV";
+        @Override
+        public void destroyItem(ViewGroup container, int position, Object object) {
+            //getChildFragmentManager().beginTransaction().detach(getChildFragmentManager().findFragmentById(container.getId())).commit();
+            //  getChildFragmentManager().beginTransaction().remove(
 
-            }
-            if (position==4){
-                return "UNIT V";
-
-            }
-            return  "    " ;
+            //  mchildFragmentmanager.beginTransaction().remove((Fragment) object).commit();
 
         }
 
-        public CustomAdapter(Context mContext) {
-            this.mContext = mContext;
-        }
+
     }
 
-  /** public class UnitAdapter extends FragmentPagerAdapter{
-       public FragmentManager fragmentManager;
-       public UnitAdapter(FragmentManager fm) {
-           super(fm);
-           fragmentManager=fm;
-       }
-
-       @Override
-       public long getItemId(int position) {
-           return UnitAdapter.POSITION_NONE;
-       }
-
-       @Override
-       public Fragment getItem(int position) {
-           switch (position){
-               case 0:
-                   return new CG1();
-
-               case 1:
-                   return  new CG2();
-
-               case 2:
-                   return  new CG3();
-
-
-               case 3:
-                   return  new CG4();
-
-               case 4:
-                   return  new CG5();
-
-           }
-           return null;
-       }
-
-       @Override
-       public CharSequence getPageTitle(int position) {
-           switch (position){
-               case 0:
-                   return "UNIT I";
-
-               case 1:return "UNIT II";
-
-               case 2:
-                   return "UNIT III";
-
-               case 3:return "UNIT IV";
-
-               case  4:
-                   return "UNIT V";
-
-           }
-           return null;
-       }
-
-       @Override
-       public int getCount() {
-           return 5;
-       }
-
-       @Override
-       public void destroyItem(ViewGroup container, int position, Object object) {
-           //getChildFragmentManager().beginTransaction().detach(getChildFragmentManager().findFragmentById(container.getId())).commit();
-           //  getChildFragmentManager().beginTransaction().remove()
-        super.destroyItem(container,position,object);
-           fragmentManager.beginTransaction().remove((Fragment)object).commit();
-       }
-
-       @Override
-       public void restoreState(Parcelable state, ClassLoader loader) {
-           super.restoreState(state, loader);
-       }
-
-       @Override
-       public Parcelable saveState() {
-           return super.saveState();
-       }
-   }
-       */
 
 
 }

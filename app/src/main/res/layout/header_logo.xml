@@ -3,7 +3,7 @@
     android:id="@+id/logo_white"
     android:layout_width="wrap_content"
     android:layout_height="@dimen/materialviewpager_logoHeight"
-    android:text=""
+    android:text="there"
     android:fitsSystemWindows="true"
     android:layout_centerHorizontal="true"
     android:textSize="30sp"

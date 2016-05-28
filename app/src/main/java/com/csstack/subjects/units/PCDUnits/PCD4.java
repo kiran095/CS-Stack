@@ -1,4 +1,4 @@
-package com.csstack.subjects.units.ParadigmUnits;
+package com.csstack.subjects.units.PCDUnits;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -18,9 +18,9 @@ import com.github.florent37.materialviewpager.adapter.RecyclerViewMaterialAdapte
 import java.util.ArrayList;
 
 /**
- * Created by nandhu on 28/5/16.
+ * Created by nandhu on 29/5/16.
  */
-public class PARDIGM2 extends Fragment implements pointsAdapter.PositionClick{
+public class PCD4 extends Fragment implements pointsAdapter.PositionClick{
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     ArrayList<String> points;
@@ -118,4 +118,5 @@ public class PARDIGM2 extends Fragment implements pointsAdapter.PositionClick{
     private void showPage(String urltoLoad) {
     }
 }
+
 
