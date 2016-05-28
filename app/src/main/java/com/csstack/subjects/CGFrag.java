@@ -5,20 +5,32 @@ import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView;
 import android.widget.TextView;
 
 import com.csstack.R;
+import com.csstack.subjects.units.CGunits.CG1;
+import com.csstack.subjects.units.CGunits.CG2;
+import com.csstack.subjects.units.CGunits.CG3;
+import com.csstack.subjects.units.CGunits.CG4;
+import com.csstack.subjects.units.CGunits.CG5;
+import com.csstack.subjects.units.pointsAdapter;
 import com.github.florent37.materialviewpager.MaterialViewPager;
+import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
+import com.github.florent37.materialviewpager.adapter.RecyclerViewMaterialAdapter;
 
 import java.util.ArrayList;
 
@@ -44,14 +56,10 @@ public class CGFrag extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
+        Log.d("COM_CSTACK","Comptuer Graphcics");
         layout = (View) inflater.inflate(R.layout.subject_layout, container, false);
 
-        sub_titles = new ArrayList<>(5);
-        sub_titles.add("Basics-2D Primitives");
-        sub_titles.add("2D Transformations");
-        sub_titles.add("3D Concepts");
-        sub_titles.add("Multimedia Basics");
-        sub_titles.add("Authoring & Applications");
+
         mViewPager=(MaterialViewPager)layout.findViewById(R.id.materialViewPager);
         Toolbar mToolbar=mViewPager.getToolbar();
         if (mToolbar != null) {
@@ -78,11 +86,11 @@ public class CGFrag extends Fragment {
             }
         });
 
-        PagerAdapter adapter = new CustomAdapter(getActivity());
+       // FragmentPagerAdapter adapter = new UnitAdapter(getChildFragmentManager());
 
 
 
-        mViewPager.getViewPager().setAdapter(adapter);
+        mViewPager.getViewPager().setAdapter(new CustomAdapter(getActivity()));
         mViewPager.getPagerTitleStrip().setViewPager(mViewPager.getViewPager());
         mViewPager.getPagerTitleStrip().setBottom(0);
         TextView textView=(TextView) layout.findViewById(R.id.logo_white);
@@ -97,6 +105,10 @@ public class CGFrag extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+
+
     }
 
     @Override
@@ -123,11 +135,13 @@ public class CGFrag extends Fragment {
     public void onStop() {
         super.onStop();
     }
-    private class CustomAdapter extends PagerAdapter {
+   public class CustomAdapter extends PagerAdapter {
         private  int NUM_OF_PAGES=5;
 
         private  Context mContext;
         public View weblayout;
+       public RecyclerView.Adapter mAdapter;
+       public RecyclerView mRecyclerView;
         @Override
         public int getCount() {
             return NUM_OF_PAGES;
@@ -149,9 +163,25 @@ public class CGFrag extends Fragment {
         }
 
         @Override
-        public Object instantiateItem(ViewGroup container, int position) {
+        public Object instantiateItem(final ViewGroup container, int position) {
              weblayout=LayoutInflater.from(mContext).inflate(R.layout.smaple,container,false);
+           mRecyclerView=(RecyclerView)weblayout.findViewById(R.id.rv);
+            mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
+            ArrayList<String> su=new ArrayList<>(5);
+            su.add("hello");
+            su.add("hi");
+            su.add("what the fuck ");
+            su.add("hello fuck");
+            su.add("lofe is beautifl");
+            su.add("its how you see it");su.add("i m the greatest");
+
+
+
+            mRecyclerView.setAdapter(mAdapter);
+
             container.addView(weblayout);
+          //  MaterialViewPagerHelper.registerRecyclerView(getActivity(),mRecyclerView,null);
             return weblayout;
 
 
@@ -162,23 +192,23 @@ public class CGFrag extends Fragment {
         @Override
         public CharSequence getPageTitle(int position) {
             if (position==0){
-                return "Introduction";
+                return "UNIT I";
 
             }
             if (position==1){
-                return "Introduction";
+                return "UNIT II";
 
             }
             if (position==2){
-                return "Problem";
+                return "UNIT III";
 
             }
             if (position==3){
-                return "Knowledge";
+                return "UNIT IV";
 
             }
             if (position==4){
-                return "Learning";
+                return "UNIT V";
 
             }
             return  "    " ;
@@ -189,6 +219,86 @@ public class CGFrag extends Fragment {
             this.mContext = mContext;
         }
     }
+
+  /** public class UnitAdapter extends FragmentPagerAdapter{
+       public FragmentManager fragmentManager;
+       public UnitAdapter(FragmentManager fm) {
+           super(fm);
+           fragmentManager=fm;
+       }
+
+       @Override
+       public long getItemId(int position) {
+           return UnitAdapter.POSITION_NONE;
+       }
+
+       @Override
+       public Fragment getItem(int position) {
+           switch (position){
+               case 0:
+                   return new CG1();
+
+               case 1:
+                   return  new CG2();
+
+               case 2:
+                   return  new CG3();
+
+
+               case 3:
+                   return  new CG4();
+
+               case 4:
+                   return  new CG5();
+
+           }
+           return null;
+       }
+
+       @Override
+       public CharSequence getPageTitle(int position) {
+           switch (position){
+               case 0:
+                   return "UNIT I";
+
+               case 1:return "UNIT II";
+
+               case 2:
+                   return "UNIT III";
+
+               case 3:return "UNIT IV";
+
+               case  4:
+                   return "UNIT V";
+
+           }
+           return null;
+       }
+
+       @Override
+       public int getCount() {
+           return 5;
+       }
+
+       @Override
+       public void destroyItem(ViewGroup container, int position, Object object) {
+           //getChildFragmentManager().beginTransaction().detach(getChildFragmentManager().findFragmentById(container.getId())).commit();
+           //  getChildFragmentManager().beginTransaction().remove()
+        super.destroyItem(container,position,object);
+           fragmentManager.beginTransaction().remove((Fragment)object).commit();
+       }
+
+       @Override
+       public void restoreState(Parcelable state, ClassLoader loader) {
+           super.restoreState(state, loader);
+       }
+
+       @Override
+       public Parcelable saveState() {
+           return super.saveState();
+       }
+   }
+       */
 
 
 }

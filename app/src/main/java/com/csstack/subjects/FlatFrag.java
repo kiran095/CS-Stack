@@ -70,11 +70,14 @@ public class FlatFrag extends Fragment {
             }
         });
 
-        PagerAdapter adapter = new CustomAdapter(getActivity());
+    //    PagerAdapter adapter = new CustomAdapter(getActivity());
 
 
 
-        mViewPager.getViewPager().setAdapter(adapter);
+
+
+
+        mViewPager.getViewPager().setAdapter(new CustomAdapter(getActivity()));
         mViewPager.getPagerTitleStrip().setViewPager(mViewPager.getViewPager());
         mViewPager.getPagerTitleStrip().setBottom(0);
         TextView textView=(TextView) layout.findViewById(R.id.logo_white);

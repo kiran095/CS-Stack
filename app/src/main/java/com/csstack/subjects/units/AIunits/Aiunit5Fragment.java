@@ -5,11 +5,14 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.csstack.R;
+import com.csstack.subjects.units.pointsAdapter;
+import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.florent37.materialviewpager.adapter.RecyclerViewMaterialAdapter;
 
 import java.util.ArrayList;
@@ -17,10 +20,23 @@ import java.util.ArrayList;
 /**
  * Created by nandhu on 23/5/16.
  */
-public class Aiunit5Fragment extends Fragment {
+public class Aiunit5Fragment extends Fragment implements pointsAdapter.PositionClick {
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     ArrayList<String> points;
+    LinearLayoutManager lm;
+    public  RecyclerViewMaterialAdapter adapter;
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+    }
+
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+    }
 
     @Override
     public void onDestroyView() {
@@ -31,14 +47,15 @@ public class Aiunit5Fragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("INtroduction");
-        points.add("HI");
-        points.add("HI");
-        points.add("HI");
-        points.add("HI");points.add("HI");
-        points.add("HI");
-        points.add("HI");
-        points.add("HI");
+        points.add("");
+        points.add("");
+        points.add("");
+        points.add("");
+        points.add("");
+        points.add("");
+        points.add("");
+        points.add("");
+        points.add("");
 
 
 
@@ -47,7 +64,12 @@ public class Aiunit5Fragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return  inflater.inflate(R.layout.unit_list_layout,container,false);
+        View view = inflater.inflate(R.layout.unit_list_layout, container, false);
+        mRecyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(getParentFragment().getContext()));
+        mRecyclerView.setAdapter(adapter);
+        MaterialViewPagerHelper.registerRecyclerView(getActivity(), mRecyclerView, null);
+        return view;
     }
 
     @Override
@@ -63,37 +85,14 @@ public class Aiunit5Fragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        mRecyclerView=(RecyclerView)view.findViewById(R.id.recyclerView);
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        mAdapter=new RecyclerViewMaterialAdapter(new pointsAdapter(points));
+
     }
 
-    private class pointsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
-        public ArrayList<String> dataset;
-        public View view;
-        public pointsAdapter(ArrayList<String> points) {
-            dataset=points;
-        }
+    @Override
+    public void positionClicked(int position) {
 
+    }
 
-        @Override
-        public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-         view=LayoutInflater.from(parent.getContext()).inflate(R.layout.tools_list_item_card_small,parent,false);
-            return new RecyclerView.ViewHolder(view) {
-
-
-
-            };
-        }
-
-        @Override
-        public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-
-        }
-
-        @Override
-        public int getItemCount() {
-            return dataset.size();
-        }
+    private void showPage(String urltoLoad) {
     }
 }

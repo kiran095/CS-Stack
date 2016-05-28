@@ -269,7 +269,7 @@ public class CSHOME extends AppCompatActivity implements
                 DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
                 Log.d("COM_CSTACK", "inside if");
                 drawer.closeDrawer(GravityCompat.END);
-
+             //       subjectFragment=new TestFragment();
 
                 getSupportFragmentManager()
                         .beginTransaction()
@@ -290,5 +290,17 @@ public class CSHOME extends AppCompatActivity implements
 
             return true;
         }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Log.d("COM_CSTACK","Save instance state");
     }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        Log.d("COM_CSTACK","Restore Instance state");
+    }
+}
 
