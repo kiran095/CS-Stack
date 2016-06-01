@@ -47,14 +47,16 @@ public class OS4 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("File concept");
+        points.add("Access methods");
+        points.add("Directory structure");
+        points.add("File-system mounting");
+        points.add("Protection");
+        points.add("Directory implementation");
+        points.add("Allocation methods");
+        points.add("Free-space management");
+        points.add("Disk scheduling");
+        points.add("Swap-space");
         points.add("");
 
 

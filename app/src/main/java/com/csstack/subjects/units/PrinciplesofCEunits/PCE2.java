@@ -46,16 +46,23 @@ public class PCE2 extends Fragment implements pointsAdapter.PositionClick{
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points=new ArrayList<>();
+        points.add("basic computer Operation");
+        points.add("classification of computer");
+        points.add("Hardware components");
+        points.add("bus architecutre and instruction sets");
+
+        points.add("computer Ethics");
+        points.add("Generation of Languages");
+        points.add("Compiler & Intreprters");
+        points.add("Virtual Machines");
+        points.add("Procesural programming");
+        points.add("Object Oriented Programming");
+        points.add("object oriented programming");
+        points.add("Scripting Languages");
+        points.add("FUnctional Languages");
+        points.add("Language Desgin");
+        points.add("Language Syntax & semantics");
 
 
 

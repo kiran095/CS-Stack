@@ -47,16 +47,13 @@ public class PCD5 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-
+        points.add("Basics");
+        points.add("Iteration spaces");
+        points.add("Affine array Index");
+        points.add("Data reuse");
+        points.add("Array Data dependence");
+        points.add("Synchronisation free parallelism");
+        points.add("Locality optimisation");
 
 
     }

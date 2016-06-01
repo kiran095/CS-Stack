@@ -47,15 +47,15 @@ public class POM4 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Foundations of Individual and  group Behaviour");
+        points.add("Motivation Theories");
+        points.add("Motivation Techniques");
+        points.add("Job satisfaction");
+        points.add("leadership");
+        points.add("Types and Theories of leadership");
+        points.add("Communication adn process");
+
+
 
 
 

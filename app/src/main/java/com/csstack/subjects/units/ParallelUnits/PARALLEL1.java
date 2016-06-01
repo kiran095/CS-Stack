@@ -47,15 +47,12 @@ public class PARALLEL1 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Parallel Computer Models");
+        points.add("ILP, TLP and Data Parallelism");
+        points.add("Processes, Tasks and Threads");
+        points.add("Shared Memory Programming");
+        points.add("Message Passing Paradigm");
+        points.add("Interconnection Networks");
 
 
 

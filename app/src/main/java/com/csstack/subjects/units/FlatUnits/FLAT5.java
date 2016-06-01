@@ -47,15 +47,13 @@ public class FLAT5 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Matrix grammar");
+        points.add("Programmed grammar");
+        points.add("Random context grammar");
+        points.add("Regular Control grammar");
+        points.add("Lindenmayer systems");
+        points.add("DNA computing and Membrane computing");
+
 
 
 

@@ -47,15 +47,27 @@ public class OS2 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Basic concepts");
+        points.add("Scheduling criteria");
+        points.add("Scheduling algorithms");
+        points.add("Thread scheduling");
+        points.add("Multiple processor scheduling");
+        points.add("Operating system examples");
+        points.add("The critical section problem");
+        points.add("Synchronization hardware");
+        points.add("Synchronization hardware");
+        points.add("Semaphore");
+        points.add("Classic problems of synchronization");
+        points.add("Critical regions");
+        points.add("Monitors");
+        points.add("Synchronization examples");
+        points.add("Deadlocks");
+        points.add("Deadlock Prevention");
+        points.add("Deadlock Avoidance");
+        points.add("Deadlock detection");
+        points.add("Recovery from deadlock");
+
+
 
 
 

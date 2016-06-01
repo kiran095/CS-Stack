@@ -47,15 +47,14 @@ public class PCD4 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Blocks & Flow Graphs");
+        points.add("ptimisation of locks");
+        points.add("Principles sources of optimsation");
+        points.add("Data Flow analysis");
+        points.add("Constant Propogation");
+        points.add("partial Redundancy Elimination");
+        points.add("Peephole optimsation");
+
 
 
 

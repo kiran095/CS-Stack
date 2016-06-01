@@ -47,15 +47,16 @@ public class SS3 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Macroprocessors");
+        points.add("Macroprocessors Functions");
+        points.add("Machine-Independent Macro");
+        points.add("Macro Processor Design Options");
+        points.add("Introduction to Virtual Machines");
+        points.add("basic Interpretation");
+        points.add("Threaded Interpretation");
+        points.add("Interpreting a complex");
+        points.add("instruction set");
+        points.add("binary translation");
 
 
 

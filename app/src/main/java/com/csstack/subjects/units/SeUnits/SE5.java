@@ -47,15 +47,14 @@ public class SE5 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+      points.add("Software evolution");
+        points.add("Verification and Validation");
+        points.add("-Critical Systems Validation");
+        points.add("Metrics for Product-Quality Management");
+        points.add("Process Improvement");
+        points.add("Risk Management-");
+        points.add("Configuration Management");
+        points.add("Software Cost Estimation");
 
 
 

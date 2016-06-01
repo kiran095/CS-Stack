@@ -47,14 +47,14 @@ public class JAVA1 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Overview of Java");
+        points.add("classes Objects & methods");
+        points.add("Inheritance ");
+        points.add("Packages and Interfaces");
+        points.add("Exception handling");
+        points.add("Multithreading");
+        points.add("Java I/O Streams");
+        points.add("File Handling");
         points.add("");
 
 

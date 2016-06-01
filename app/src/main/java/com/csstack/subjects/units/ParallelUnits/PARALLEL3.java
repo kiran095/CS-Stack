@@ -47,15 +47,12 @@ public class PARALLEL3 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("OpenMP Execution Model");
+        points.add("Memory Model and Consistency");
+        points.add("Open MP Directives");
+        points.add("Run Time Library Routines");
+        points.add("Handling Data and Functional Parallelism");
+        points.add("Performance Considertions");
 
 
 

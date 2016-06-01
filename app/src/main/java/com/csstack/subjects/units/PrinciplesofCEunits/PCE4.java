@@ -47,15 +47,12 @@ public class PCE4 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("File Based Approach");
+        points.add("Evolutions of Data models");
+        points.add("Architecture of DBMS");
+        points.add("Data Independence");
+        points.add("Data dictionary");
+        points.add("Database administrator");
 
 
 

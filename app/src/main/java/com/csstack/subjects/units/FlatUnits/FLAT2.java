@@ -47,11 +47,12 @@ public class FLAT2 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Context-Free Grammar (CFG)");
+        points.add("Parse Trees");
+        points.add("- Normal forms for CFG");
+        points.add("Pushdown\n" +
+                "automata");
+        points.add("Pumping lemma for CFL");
         points.add("");
         points.add("");
         points.add("");

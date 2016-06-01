@@ -47,15 +47,16 @@ public class PCE5 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Computer Networks");
+        points.add("Open Systems Interconnection");
+        points.add("Types of NEtworks");
+        points.add("Topologies in Network Design");
+        points.add("Swtiching Technologies");
+        points.add("TCP/IP Network model");
+        points.add("Networking devices");
+        points.add("Internet");
+        points.add("World wide web");
+
 
 
 

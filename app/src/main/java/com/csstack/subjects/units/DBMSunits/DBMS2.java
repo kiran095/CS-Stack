@@ -47,13 +47,13 @@ public class DBMS2 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("ER Diagrams");
+        points.add("Relational Model");
+        points.add("- Keys");
+        points.add("- Relational Algebra");
+        points.add("Normalisation");
+        points.add("BCNF");
+        points.add("Join Dependencies");
         points.add("");
         points.add("");
 

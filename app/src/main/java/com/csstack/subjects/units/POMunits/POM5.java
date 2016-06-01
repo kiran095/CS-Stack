@@ -47,15 +47,13 @@ public class POM5 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("System and Process controlling");
+
+
+        points.add("Control tehcnniques");
+        points.add("Productivity and Management");
+        points.add("Control and perfomance");
+        points.add("Reporting");
 
 
 

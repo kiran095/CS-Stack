@@ -47,10 +47,10 @@ public class DAA4 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("String Mathcing");
+        points.add("KMP String Matching Algorithm");
+        points.add("Prefix Computation");
+        points.add("Multi Threaded Programming");
         points.add("");
         points.add("");
         points.add("");

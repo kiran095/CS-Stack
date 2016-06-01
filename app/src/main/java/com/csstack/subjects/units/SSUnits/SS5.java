@@ -47,15 +47,12 @@ public class SS5 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Instruction Set Issues");
+        points.add("Profiling");
+        points.add("Grids");
+        points.add("Code optimizations-");
+        points.add("Garbage Collection");
+
 
 
 

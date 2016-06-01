@@ -47,18 +47,11 @@ public class MOBILE5 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-
-
-
+        points.add("Mobile IP");
+        points.add("DHCP");
+        points.add("Routing in Mobile");
+        points.add("TCP improvements");
+        points.add("TCP over 2.5/3G.");
     }
 
     @Nullable

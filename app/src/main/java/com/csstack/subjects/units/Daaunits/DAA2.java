@@ -47,15 +47,15 @@ public class DAA2 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Greedy Algorithm's");
+        points.add("Knapsack Porblem");
+        points.add("Minimum Cost Spanning trees");
+        points.add("Shortest Path Problem");
+        points.add("Dynammic Programming");
+        points.add("Principle of Optimality");
+        points.add("All Pairs Problem");
+        points.add("Longest Common SubSequence");
+        points.add("Travelling Salesman Problem");
 
 
 

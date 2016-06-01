@@ -47,15 +47,15 @@ public class OOAD5 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+
+        points.add("More Patterns");
+        points.add("Analysis update");
+        points.add("Objects with responsibilities");
+        points.add("Applying design patterns");
+        points.add("Architectural Analysis");
+        points.add("Architecture Refinement");
+        points.add("Package Design");
+        points.add("Persistence framework with patterns.");
 
 
 

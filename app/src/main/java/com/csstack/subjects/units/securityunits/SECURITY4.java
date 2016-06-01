@@ -47,15 +47,15 @@ public class SECURITY4 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Requirements in Database Systems");
+        points.add("Reliablity & integrity");
+        points.add("Two phase update");
+        points.add("Redundancy/Internal Consistency");
+        points.add("Recovery");
+        points.add("Concurrency");
+        points.add("sensitive data");
+        points.add("Types of Disclosures");
+        points.add("Inference");
 
 
 

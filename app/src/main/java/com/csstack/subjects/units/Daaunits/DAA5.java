@@ -47,17 +47,14 @@ public class DAA5 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
 
-
+        points.add("NP Completeness");
+        points.add("Polynomial Time Verification");
+        points.add("Theroy of Reduciblity");
+        points.add("CIrcuit Satisfiablity");
+        points.add("NP Completeness");
+        points.add("Samples Problems of NP COmpleteness");
+        points.add("Approximation Alogrithm");
 
     }
 

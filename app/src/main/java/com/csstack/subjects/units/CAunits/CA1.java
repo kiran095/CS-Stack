@@ -47,14 +47,14 @@ public class CA1 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Units of a Digital Computer");
+        points.add("Hardware");
+        points.add("Software Interface");
+        points.add("Hardware Language");
+        points.add("Instruction Set Architecture");
+        points.add("RISC and CISC Architectures");
+        points.add("Performance Metrics –");
+        points.add("Amdahl’s Law");
         points.add("");
 
 

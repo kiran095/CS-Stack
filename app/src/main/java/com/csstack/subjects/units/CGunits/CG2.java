@@ -47,15 +47,11 @@ public class CG2 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("2D Viewing");
+        points.add("Window");
+        points.add("View Port Transformation");
+        points.add("2D Geometric Transormations");
+        points.add("Clipping Alorithms");
 
 
 

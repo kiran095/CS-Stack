@@ -47,15 +47,15 @@ public class MP4 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Memory Interfacing");
+        points.add("I/O interfacing");
+        points.add("Parallel communication interface");
+        points.add("Serial communication interface");
+        points.add("Timer");
+        points.add("Keyboard /display controller");
+        points.add("Interrupt controller");
+        points.add("DMA controller");
+        points.add("Programming and applications");
 
 
 

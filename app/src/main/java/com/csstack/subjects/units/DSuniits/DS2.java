@@ -47,15 +47,13 @@ public class DS2 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Trees");
+        points.add("Binary Trees");
+        points.add("Tree Traversal");
+        points.add("Threaded binary trees");
+        points.add("Graph and its representations");
+        points.add("Graph Traversals");
+        points.add("Connected components");
 
 
 

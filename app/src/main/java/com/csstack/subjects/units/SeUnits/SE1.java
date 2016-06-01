@@ -47,16 +47,17 @@ public class SE1 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-
+        points.add("Rise of Software");
+        points.add("Legacy Software");
+        points.add("Generic View of Process");
+        points.add("Capablity maturity model");
+        points.add("Waterfall model");
+        points.add("Incremental Process model");
+        points.add("The RAD model");
+        points.add("Sprial model");
+        points.add("Concurrent development model");
+        points.add("Specialized Process model");
+        points.add("Unified Process model");
 
 
     }

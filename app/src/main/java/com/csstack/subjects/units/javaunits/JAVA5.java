@@ -47,15 +47,12 @@ public class JAVA5 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Creating Interactive Websites");
+        points.add("Search engines");
+        points.add("cookies");
+        points.add("Blogs");
+        points.add("Social web applications");
+
 
 
 

@@ -47,10 +47,10 @@ public class OOAD4 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("designs to code");
+        points.add("Test Driven development");
+        points.add("refactoring");
+        points.add("UML Tools");
         points.add("");
         points.add("");
         points.add("");

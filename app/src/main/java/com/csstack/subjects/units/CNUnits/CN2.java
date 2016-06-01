@@ -47,12 +47,12 @@ public class CN2 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("User Datagram protocol");
+        points.add("Transmission Control Protocol");
+        points.add("Flow Control");
+        points.add("COngestion Control");
+        points.add("Queing");
+        points.add("Quality Of Service");
         points.add("");
         points.add("");
         points.add("");

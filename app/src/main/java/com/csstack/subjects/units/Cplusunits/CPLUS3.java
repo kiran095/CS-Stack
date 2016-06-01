@@ -47,15 +47,11 @@ public class CPLUS3 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Classes & Objects");
+        points.add("Operator Overloading");
+        points.add("Inheritance");
+        points.add("Polymorphism");
+        points.add("Virtual Functions");
 
 
 

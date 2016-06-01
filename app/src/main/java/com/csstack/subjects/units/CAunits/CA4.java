@@ -47,15 +47,12 @@ public class CA4 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Addition and Subtraction");
+        points.add("Fast Adders");
+        points.add("Binary Multiplication");
+        points.add("Binary Division");
+        points.add("Floating Point Numbers");
+
 
 
 

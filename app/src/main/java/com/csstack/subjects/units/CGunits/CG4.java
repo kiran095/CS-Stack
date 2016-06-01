@@ -46,11 +46,18 @@ public class CG4 extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ArrayList<String> points=new ArrayList<>();
-        points.add("hi");
-        points.add("hi");
-        points.add("hi");
-        points.add("hi");
-        points.add("hi");
+        points.add("Multimedia");
+        points.add("Animations");
+        points.add("Compression & Types");
+        points.add("Image Compression");
+
+        points.add("Video Compression");
+        points.add("File Format ");
+        points.add("Multimedia Data structres-KD Trees , R-Trees");
+        points.add("");
+        points.add("");
+        points.add("");
+
        // mAdapter=new pointsAdapter(points);
     }
 

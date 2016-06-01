@@ -47,15 +47,15 @@ public class CA3 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Exploitation of more ILP");
+        points.add("Hardware and Software Approaches");
+        points.add("Dynamic Scheduling");
+        points.add("Speculation");
+        points.add("Compiler Approaches");
+        points.add("Multiple Issue Processors");
+        points.add("ILP and Thread Level Parallelism");
+        points.add("Multicore Processors");
+        points.add("Graphics and Computing GPUs");
 
 
 

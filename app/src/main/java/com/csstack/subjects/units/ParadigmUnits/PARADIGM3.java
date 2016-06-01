@@ -47,15 +47,15 @@ public class PARADIGM3 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Call and Return");
+        points.add("Parameter passing");
+        points.add("function declaration");
+        points.add("semantics of call and return");
+        points.add("formal treatment of types and semantics");
+        points.add("memory management");
+        points.add("dynamic arrays");
+        points.add("garbage Collection");
+
 
 
 

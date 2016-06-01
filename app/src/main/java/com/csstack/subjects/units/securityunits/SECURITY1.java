@@ -47,15 +47,17 @@ public class SECURITY1 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Security overivew");
+        points.add("Substitution ciphers");
+        points.add("Transpositions");
+        points.add("Encryption Algorithams");
+        points.add("Data Enryption Sstandards");
+        points.add("AES");
+        points.add("Public Key Encryption");
+        points.add("Cryptographc hash functions");
+        points.add("Key Exchange");
+        points.add("digital Signature");
+        points.add("certificates");
 
 
 

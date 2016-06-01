@@ -48,11 +48,11 @@ public class CG1 extends Fragment implements pointsAdapter.PositionClick {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Basics");
+        points.add("Input Primitives");
+        points.add("OpenGL");
+        points.add("Output Primitives");
+        points.add("Algorithms");
         points.add("");
         points.add("");
         points.add("");

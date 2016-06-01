@@ -47,15 +47,11 @@ public class SS4 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Pascal P-Code VM");
+        points.add("Java VM Architecture");
+        points.add("Common Language infrastructre");
+        points.add("Dynamic Class Loading");
+
 
 
 

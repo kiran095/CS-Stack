@@ -47,15 +47,28 @@ public class OS1 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Introduction to operating systems");
+        points.add("Computer system organization, architecture");
+        points.add("Operating system structure");
+        points.add("rocess, memory, storage managemen");
+        points.add("Protection and Security");
+        points.add("Distributed systems");
+        points.add("Computing Environments");
+        points.add("Open-source operating systems");
+        points.add("OS services");
+        points.add("User operating-system interface");
+        points.add("System calls");
+        points.add("Types");
+        points.add("System programs");
+        points.add("OS structure");
+        points.add("System Boot");
+        points.add("OS generation");
+        points.add("Process concept");
+        points.add("Cooperating processes");
+        points.add("Inter-process communication");
+        points.add("Multithreading models");
+        points.add("Thread Libraries");
+
 
 
 

@@ -47,15 +47,14 @@ public class JAVA4 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Types of servers");
+        points.add("Configuring and Using Web servers");
+        points.add("Setting up Databases");
+        points.add("Java Database Connectivity");
+        points.add("Handling form data");
+        points.add("querying databases");
+        points.add("information retrieval");
+        points.add("Session management");
 
 
 

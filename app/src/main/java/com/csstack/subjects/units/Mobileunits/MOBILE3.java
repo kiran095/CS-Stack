@@ -47,13 +47,13 @@ public class MOBILE3 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Frequencies");
+        points.add("Signals");
+        points.add("Antennas");
+        points.add("Signal propagation");
+        points.add("Media Access Control");
+        points.add("GSM");
+        points.add("GPRS");
         points.add("");
         points.add("");
 

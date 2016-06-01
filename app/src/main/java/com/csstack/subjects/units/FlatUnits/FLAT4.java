@@ -47,10 +47,10 @@ public class FLAT4 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Recursively Enumerable");
+        points.add("Undecidable problems");
+        points.add("Rice theorem");
+        points.add("Post’s Correspondence Problem.");
         points.add("");
         points.add("");
         points.add("");

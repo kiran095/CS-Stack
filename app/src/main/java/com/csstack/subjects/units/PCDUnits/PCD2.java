@@ -47,15 +47,16 @@ public class PCD2 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Syntax Directed Definition");
+        points.add("Evaluation orders for SDD");
+        points.add("Translation schemes");
+        points.add("Intermediate schmemes");
+        points.add("Three Address codes");
+        points.add("Syntax tree");
+        points.add("postfix code");
+        points.add("Type checking");
+        points.add("Express translation");
+        points.add("Back patching");
 
 
 

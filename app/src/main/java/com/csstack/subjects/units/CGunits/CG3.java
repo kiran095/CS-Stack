@@ -47,15 +47,16 @@ public class CG3  extends Fragment  implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Projections");
+        points.add("Three Dimensional Object Representations");
+        points.add("Parallel & Perspective Polygons");
+        points.add("Visualisation of data sets");
+        points.add("3D Affine Transforamtions");
+        points.add("3D Rotations using Quatemions");
+        points.add("Viewing");
+        points.add("Visible Surface Identification");
+        points.add("Color models");
+        points.add("3D Transformations in OpenGL");
 
 
 

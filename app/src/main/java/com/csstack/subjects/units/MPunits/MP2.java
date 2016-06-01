@@ -47,15 +47,15 @@ public class MP2 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("8086");
+        points.add("Architecture");
+        points.add("Instruction set");
+        points.add("Addressing modes");
+        points.add("Assembly language programming");
+        points.add("Procedures");
+        points.add("Macros");
+        points.add("Interrupts");
+        points.add("interrupt service routines");
 
 
 

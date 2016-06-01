@@ -47,15 +47,14 @@ public class CA2 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Components of the Processor");
+        points.add("Datapath and Control");
+        points.add("Execution of a Complete Instruction");
+        points.add("Hardwired and Micro programmed Control");
+        points.add("Instruction Level Parallelism");
+        points.add("Pipelining");
+        points.add("Pipelined Implementation");
+        points.add("Hazard");
 
 
 

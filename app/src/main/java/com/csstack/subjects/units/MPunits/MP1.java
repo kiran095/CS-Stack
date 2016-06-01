@@ -47,13 +47,10 @@ public class MP1 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("The 8085");
+        points.add("Microprocessor architecture");
+        points.add("Instruction set ");
+        points.add("Programming the 8085");
         points.add("");
         points.add("");
 

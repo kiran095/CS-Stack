@@ -47,12 +47,12 @@ public class DBMS3 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Introduction to SQL");
+        points.add("- Data Constraints");
+        points.add("Triggers");
+        points.add("Database Security");
+        points.add("Embedded & Dynamic SQL");
+        points.add("Views");
         points.add("");
         points.add("");
         points.add("");

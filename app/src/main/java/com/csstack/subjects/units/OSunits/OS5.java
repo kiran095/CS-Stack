@@ -47,15 +47,17 @@ public class OS5 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("The Linux System");
+        points.add("Design Principles");
+        points.add("Kernel Modules");
+        points.add("Process Management");
+        points.add("Memory management");
+        points.add("File systems");
+        points.add("Input and Output");
+        points.add("Inter-process Communication");
+        points.add("Network Structure");
+        points.add("Security");
+
 
 
 

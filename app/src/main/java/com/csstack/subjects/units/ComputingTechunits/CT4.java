@@ -47,15 +47,12 @@ public class CT4 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Function");
+        points.add("Parameter Passing");
+        points.add("Recursion");
+        points.add("Pointers");
+        points.add("Pointer Arthematic");
+        points.add("Array pointer's");
 
 
 

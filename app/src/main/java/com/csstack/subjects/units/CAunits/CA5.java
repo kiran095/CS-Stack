@@ -47,19 +47,20 @@ public class CA5 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-
-
-
-    }
+        points.add("hierarchical memory system");
+        points.add("Types and characteristics of memories");
+        points.add("Cache memories");
+        points.add("Improving cache performance");
+        points.add("Virtual memory");
+        points.add("Memory management technique");
+        points.add("Associative memories");
+        points.add("Accessing I/O devices");
+        points.add("Programmed Input/Output");
+        points.add("Interrupts");
+        points.add("Direct Memory Access");
+        points.add("Interface circuits");
+        points.add("Standard I/O Interfaces");
+        }
 
     @Nullable
     @Override

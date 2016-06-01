@@ -47,15 +47,18 @@ public class CN3 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Circuit Switching");
+        points.add("Packet Switching");
+        points.add("IP");
+        points.add("ARP");
+        points.add("DHCP");
+        points.add("ICMP");
+        points.add("Routing");
+        points.add("Subnetting");
+        points.add("Interdomain Routing");
+        points.add("BGP");
+        points.add("IPv6");
+        points.add("COngestion Avoidance");
 
 
 

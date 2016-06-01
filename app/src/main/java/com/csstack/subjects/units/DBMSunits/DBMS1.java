@@ -47,15 +47,11 @@ public class DBMS1 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Data");
+        points.add("Evolution of DB & DBMS");
+        points.add("Data models & Database Architecture");
+        points.add("challenges in Database Systems");
+
 
 
 

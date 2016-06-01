@@ -47,15 +47,14 @@ public class PARALLEL5 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("GPU Architecture");
+        points.add("Basics of CUDA");
+        points.add("CUDA Threads");
+        points.add("CUDA Memories");
+        points.add("Synchronization");
+        points.add("Handling");
+        points.add("Performance Issues");
+
 
 
 

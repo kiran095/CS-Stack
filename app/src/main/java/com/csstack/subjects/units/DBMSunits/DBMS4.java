@@ -47,16 +47,14 @@ public class DBMS4 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-
+        points.add("Introduction to Transactions");
+        points.add("Transaction Systems");
+        points.add("ACID Properties");
+        points.add("Two Phase Commit Protocol");
+        points.add("Recovery with SQL");
+        points.add("Locking Protocols");
+        points.add("Deadlocks & Managing Deadlocks");
+        points.add("SQL Support for Concurrency");
 
 
     }

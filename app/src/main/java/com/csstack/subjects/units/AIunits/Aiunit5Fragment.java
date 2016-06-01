@@ -47,15 +47,17 @@ public class Aiunit5Fragment extends Fragment implements pointsAdapter.PositionC
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("AI Applications");
+        points.add("Language Models");
+        points.add("Information Retrival");
+        points.add("Natural Language Proccessing");
+        points.add("Machine Translation");
+        points.add("Speech Recogonition");
+        points.add("Robotics");
+        points.add("Hardware");
+        points.add("Perception");
+        points.add("Planning ");
+        points.add("Moving");
 
 
 

@@ -47,14 +47,14 @@ public class MP3 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("8086 signals");
+        points.add("Basic configurations");
+        points.add("System bus timing");
+        points.add("System design using 8086");
+        points.add("Multiprocessor configurations");
+        points.add("Coprocessor");
+        points.add("Coupled configurations");
+        points.add("advanced processors.");
         points.add("");
 
 

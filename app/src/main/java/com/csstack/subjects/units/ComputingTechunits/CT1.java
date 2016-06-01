@@ -47,15 +47,12 @@ public class CT1 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("What is Computer?");
+        points.add("Generation & classification");
+        points.add("Numbering System");
+        points.add("Algorithm");
+        points.add("Pesudo code");
+        points.add("Flow chart");
 
 
 

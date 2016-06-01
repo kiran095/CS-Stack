@@ -47,15 +47,18 @@ public class SECURITY5 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Secure SDLC");
+        points.add("Secure Application Testing");
+        points.add("Security Architeacure Models");
+        points.add("Trusted Computing");
+        points.add("Bell-Lapdula Confidentiality model");
+        points.add("Biba integrity model");
+        points.add("Graham-Denning Access control model");
+        points.add("Harrison Ruzzo Ulman model");
+        points.add("Secure Frameworks");
+        points.add("PCI DSS");
+        points.add("Security Standards");
+        points.add("NIST");
 
 
 

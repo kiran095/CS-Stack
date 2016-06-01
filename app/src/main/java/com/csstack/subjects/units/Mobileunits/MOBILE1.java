@@ -47,9 +47,9 @@ public class MOBILE1 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Basics");
+        points.add("Architecture and requirements");
+        points.add("operating systems");
         points.add("");
         points.add("");
         points.add("");

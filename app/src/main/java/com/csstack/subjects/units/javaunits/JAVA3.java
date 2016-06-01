@@ -47,15 +47,20 @@ public class JAVA3 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Scripting for content structuring");
+        points.add("XML");
+        points.add("Document");
+        points.add("XML Schema");
+        points.add("Document Object Model");
+        points.add("Presenting XML");
+        points.add("Using XML Parsers: DOM and SAX -");
+        points.add("Evolution of AJAX JQuery");
+        points.add("Web applications with AJAX");
+        points.add("AJAX with PHP");
+        points.add("- AJAX with Databases");
+        points.add("Jquery");
+        points.add("Swing");
+
 
 
 

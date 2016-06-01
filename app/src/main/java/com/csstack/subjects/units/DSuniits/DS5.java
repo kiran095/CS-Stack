@@ -47,15 +47,13 @@ public class DS5 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Linear Search");
+        points.add("Binary Search ");
+        points.add("Hash tables");
+        points.add("Overflow handling");
+        points.add("Cylinder Surface Indexing");
+        points.add("Hash Index");
+        points.add("B-Tree Indexing");
 
 
 

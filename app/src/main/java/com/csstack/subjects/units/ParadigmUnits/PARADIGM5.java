@@ -47,15 +47,14 @@ public class PARADIGM5 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Logic programming");
+        points.add("Event-Driven programming");
+        points.add("Concurrent Programming");
+        points.add("Synchronization strategies");
+        points.add("Language level mechanism");
+        points.add("Interprocess");
+        points.add("Scripting languages.");
+
 
 
 

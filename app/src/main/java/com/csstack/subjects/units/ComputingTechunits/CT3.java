@@ -47,15 +47,11 @@ public class CT3 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Array's");
+        points.add("Types of Array's");
+        points.add("String Operations");
+        points.add("Sorting Operations");
+        points.add("MAtrix Operations");
 
 
 

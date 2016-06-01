@@ -47,10 +47,10 @@ public class MOBILE4 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Infrared vs radio transmission");
+        points.add("Infrastructure and ad hoc networks");
+        points.add("IEEE 802.11,WLAN");
+        points.add("satellites networks");
         points.add("");
         points.add("");
         points.add("");

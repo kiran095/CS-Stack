@@ -27,6 +27,7 @@ public class CT2 extends Fragment implements pointsAdapter.PositionClick{
     LinearLayoutManager lm;
     public RecyclerViewMaterialAdapter adapter;
 
+
     @Override
     public void onDestroy() {
         super.onDestroy();
@@ -47,15 +48,13 @@ public class CT2 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Introduction to C");
+        points.add("Compilation & Linking");
+        points.add("Data types");
+        points.add("I/O operation");
+        points.add("Decision Making Statements");
+        points.add("Looping Statements");
+
 
 
 

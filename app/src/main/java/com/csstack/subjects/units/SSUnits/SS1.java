@@ -47,11 +47,11 @@ public class SS1 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Machine Instructions and Programs");
+        points.add("Assemblers");
+        points.add("Basic Assembler Functions");
+        points.add("Assembler Features");
+        points.add("Assembler Design Options");
         points.add("");
         points.add("");
         points.add("");

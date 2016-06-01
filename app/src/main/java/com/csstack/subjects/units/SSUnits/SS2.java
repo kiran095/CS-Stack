@@ -47,15 +47,15 @@ public class SS2 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Loaders and Linkers");
+        points.add("Basic Loader Functions");
+        points.add("Machine-Dependent Loader Features");
+        points.add("Machine-Independent Loader");
+        points.add("Dynamic Linking");
+        points.add("Object files");
+        points.add("designing an object format");
+        points.add("Symbols and Relocation");
+
 
 
 

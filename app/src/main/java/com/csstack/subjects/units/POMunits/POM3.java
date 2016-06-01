@@ -47,16 +47,12 @@ public class POM3 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-
+        points.add("Organisation chart");
+        points.add("Organisation Structre");
+        points.add("Line of Staff");
+        points.add("Departmentalisation");
+        points.add("Job designation");
+        points.add("Human Resource Management");
 
 
     }

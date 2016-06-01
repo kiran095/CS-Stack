@@ -47,15 +47,12 @@ public class DS3 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("AVL Trees");
+        points.add("Red-Black Trees");
+        points.add("Splay Trees");
+        points.add("Binary Heap –");
+        points.add("Leftist Heap");
+
 
 
 

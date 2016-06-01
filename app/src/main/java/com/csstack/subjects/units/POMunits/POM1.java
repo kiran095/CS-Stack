@@ -47,15 +47,13 @@ public class POM1 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Definition");
+        points.add("Manager Roles and Skills");
+        points.add("Evolution");
+        points.add("Approaches to Management");
+        points.add("Types of Business Organisation");
+        points.add("Companies-public, private");
+        points.add("Organisation cultre");
 
 
 

@@ -47,15 +47,22 @@ public class CN4 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Channel Access in links");
+        points.add("SDMA");
+        points.add("TDMA");
+        points.add("FDMA");
+        points.add("CDMA");
+        points.add("Mutiple Access Techniques");
+        points.add("ISsues in Data link layer");
+        points.add("Framing");
+        points.add("Error collection & detection");
+        points.add("Link level Flow");
+        points.add("Meduim Access");
+        points.add("Ethernet");
+        points.add("Token Ring");
+        points.add("FDDI");
+        points.add("Wireless LAN");
+        points.add("Bridges & Swithces");
 
 
 

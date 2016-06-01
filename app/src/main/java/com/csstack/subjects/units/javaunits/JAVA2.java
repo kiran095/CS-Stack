@@ -47,15 +47,23 @@ public class JAVA2 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Internet Addressing,");
+        points.add("Web Application Architectures");
+        points.add("Scripting Languages");
+        points.add("Databases");
+        points.add("Search Engines");
+        points.add("Web Services");
+        points.add("Collective Intelligence");
+        points.add("Features of Web 3.0");
+        points.add("Overview of Java Networking");
+        points.add("TCP");
+        points.add("UDP");
+        points.add("InetAddress and Ports");
+        points.add("Socket Programming");
+        points.add("Working with URLs");
+        points.add("HTTP");
+        points.add("SMTP");
+        points.add("Remote Method Invocation");
 
 
 

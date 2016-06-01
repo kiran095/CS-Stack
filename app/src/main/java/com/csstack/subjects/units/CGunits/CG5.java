@@ -51,11 +51,11 @@ public class CG5  extends Fragment implements pointsAdapter.PositionClick {
         points.add("");
         points.add("");
         points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Authoring Systemsi");
+        points.add("Video on Demand");
+        points.add("Virtual Reality");
+        points.add("Augumented Reality");
+        points.add("Content based Retrivel");
 
 
 

@@ -47,13 +47,13 @@ public class MP5 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Architecture of 8051");
+        points.add("Signals");
+        points.add("Operational features");
+        points.add("Memory and I/O addressing");
+        points.add("Interrupts");
+        points.add("Instruction set");
+        points.add("Applications");
         points.add("");
         points.add("");
 

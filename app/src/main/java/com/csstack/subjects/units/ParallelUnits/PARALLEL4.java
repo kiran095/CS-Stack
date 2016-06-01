@@ -47,15 +47,10 @@ public class PARALLEL4 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("The MPI Programming Model");
+        points.add("MPI Basics");
+        points.add("Circuit Satisfiability");
+        points.add("Asynchronous Communication");
 
 
 

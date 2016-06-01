@@ -47,15 +47,15 @@ public class CPLUS5 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
+        points.add("C++ Stream Classes");
+        points.add("Formatted I/O");
+        points.add("File Classes");
+        points.add("Dynamic Memory Allocation");
+        points.add("Stadard Template Library");
+
         points.add("");
         points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+
 
 
 

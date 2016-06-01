@@ -47,15 +47,11 @@ public class CT5 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+
+        points.add("Structres");
+        points.add("union's");
+        points.add("Storage Classes");
+        points.add("Pre Processor Directives");
 
 
 

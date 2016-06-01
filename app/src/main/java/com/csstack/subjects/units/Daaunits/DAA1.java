@@ -47,15 +47,14 @@ public class DAA1 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("What is Algorithm?");
+        points.add("Growth of Functions");
+        points.add("Recurrence equations");
+        points.add("Substution Method");
+        points.add("Maxima & minima");
+        points.add("Strasses Matrix Multiplication");
+        points.add("Convex Hull");
+
 
 
 

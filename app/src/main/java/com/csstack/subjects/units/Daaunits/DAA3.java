@@ -47,13 +47,14 @@ public class DAA3 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("BAcktracking");
+        points.add("8 Queens problem");
+        points.add("Graph Coloring");
+        points.add("Sum of Suset problems");
+        points.add("Hamiltonian Cycle");
+        points.add("Branch & Bound");
+        //here another knapsack & travlling
+        points.add("Trav;
         points.add("");
         points.add("");
 

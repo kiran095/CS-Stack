@@ -47,16 +47,17 @@ public class OS3 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-
+        points.add("Memory Management");
+        points.add("Swapping");
+        points.add("Contiguous memory allocation");
+        points.add("Paging");
+        points.add("Segmentation");
+        points.add("Virtual Memor");
+        points.add("Demand paging");
+        points.add("Copy on Write");
+        points.add("Page replacement");
+        points.add("Thrashing.");
+        points.add("Allocation of frames");
 
 
     }

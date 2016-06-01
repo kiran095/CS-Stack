@@ -47,15 +47,14 @@ public class FLAT1 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Finite Automata (FA)");
+        points.add("Deterministic Finite Automata (DFA)");
+        points.add("Non-deterministic Finite Automata (NFA)");
+        points.add("Epsilon transitions");
+        points.add("Regular Expression");
+        points.add("Pumping lemma");
+        points.add("Equivalence and minimization");
+
 
 
 

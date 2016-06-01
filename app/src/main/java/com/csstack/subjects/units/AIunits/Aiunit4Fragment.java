@@ -47,15 +47,20 @@ public class Aiunit4Fragment extends Fragment implements pointsAdapter.PositionC
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Probability basics");
+        points.add("Bayes Rule");
+        points.add("Bayesian Networks");
+        points.add("Inference");
+        points.add("Hidden Markov Models");
+        points.add("Types of Learning");
+        points.add("Learning Decision Trees");
+        points.add("Regression");
+        points.add("Artificial Neural Networks");
+        points.add("Non Parametric Models");
+        points.add("SUpport Vector Machines");
+        points.add("Statistical Learning");
+        points.add("The EM Algorithm");
+        points.add("Reinforcement Learning");
 
 
 

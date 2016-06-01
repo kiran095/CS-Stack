@@ -47,15 +47,17 @@ public class PCE3 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Roles of OS");
+        points.add("Functions of OS");
+        points.add("Process Managment");
+        points.add("Memory Managment");
+        points.add("File Managment");
+        points.add("Device Mangament");
+        points.add("Device Managment");
+        points.add("Security");
+        points.add("Ms-DOS");
+        points.add("UNIX");
+        points.add("Current OS");
 
 
 

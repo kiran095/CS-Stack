@@ -47,15 +47,14 @@ public class DS4 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Insertion sort");
+        points.add("Merge sort");
+        points.add("Quick sort");
+        points.add("Heap sort");
+        points.add("Sorting with disks");
+        points.add("k-way merging");
+        points.add("Polyphase merge.");
+
 
 
 

@@ -47,15 +47,16 @@ public class PARADIGM2 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Expression");
+        points.add("Assignment");
+        points.add("Control flow");
+        points.add("Input/output");
+        points.add("exception handling");
+        points.add("state\n" +
+                "transformation –");
+        points.add("partial function");
+        points.add("dynamic typing");
+
 
 
 

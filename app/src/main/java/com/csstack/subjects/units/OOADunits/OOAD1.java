@@ -47,15 +47,17 @@ public class OOAD1 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Introduction");
+        points.add("object oriented system development");
+        points.add("Object basics");
+        points.add("The Unified Process");
+        points.add("Modeling concepts");
+        points.add("Analysis and modeling");
+        points.add("UML diagrams");
+        points.add("Use case Modeling");
+        points.add("Class modeling");
+        points.add("State modeling");
+        points.add("Interaction Modeling")
 
 
 

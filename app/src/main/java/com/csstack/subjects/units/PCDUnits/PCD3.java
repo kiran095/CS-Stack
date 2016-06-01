@@ -47,15 +47,14 @@ public class PCD3 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+        points.add("Storage organization");
+        points.add("Stack allocation space");
+        points.add("Heap Memory");
+        points.add("Design of code gnenrator");
+        points.add("Register Managment");
+        points.add("Tree rewriting");
+        points.add("Optimal code Generation");
+        points.add("Dynammic Programming");
 
 
 
