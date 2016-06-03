@@ -48,17 +48,14 @@ public class CA5 extends Fragment implements pointsAdapter.PositionClick{
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
         points.add("hierarchical memory system");
-        points.add("Types and characteristics of memories");
         points.add("Cache memories");
         points.add("Improving cache performance");
         points.add("Virtual memory");
         points.add("Memory management technique");
         points.add("Associative memories");
         points.add("Accessing I/O devices");
-        points.add("Programmed Input/Output");
         points.add("Interrupts");
         points.add("Direct Memory Access");
-        points.add("Interface circuits");
         points.add("Standard I/O Interfaces");
         }
 
@@ -93,23 +90,36 @@ public class CA5 extends Fragment implements pointsAdapter.PositionClick{
     public void positionClicked(int position) {
         Log.d("COM_CSTACK","IN fragment interface definition");
         String urltoLoad=null;
-        switch (position){
+        switch (position) {
 
-            case 0:urltoLoad="";
+            case 0:
+                urltoLoad = "https://en.wikipedia.org/wiki/Memory_hierarchy";
                 break;
             case 1:
-                urltoLoad="";
+                urltoLoad = "https://en.wikipedia.org/wiki/CPU_cache";
                 break;
-            case 2:urltoLoad="";
+            case 2:
+                urltoLoad = "https://en.wikipedia.org/wiki/Virtual_memory";
                 break;
-            case 3:urltoLoad="";
+            case 3:
+                urltoLoad = "https://en.wikipedia.org/wiki/Memory_management";
                 break;
-            case 4:urltoLoad="";
+            case 4:
+                urltoLoad = "https://en.wikipedia.org/wiki/Content-addressable_memory";
                 break;
-            case 5:urltoLoad="";
+            case 5:
+                urltoLoad = "https://en.wikipedia.org/wiki/Input/output#Interface";
 
                 break;
-
+            case 6:
+                urltoLoad = "https://en.wikipedia.org/wiki/Interrupt";
+                break;
+            case 7:
+                urltoLoad = "https://en.wikipedia.org/wiki/Direct_memory_access";
+                break;
+            case 8:
+                urltoLoad = "http://www.cs.uwm.edu/classes/cs458/Lecture/HTML/ch11s02.html";
+                break;
         }
 
 

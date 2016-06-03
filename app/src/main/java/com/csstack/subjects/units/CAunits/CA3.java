@@ -48,7 +48,6 @@ public class CA3 extends Fragment implements pointsAdapter.PositionClick{
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
         points.add("Exploitation of more ILP");
-        points.add("Hardware and Software Approaches");
         points.add("Dynamic Scheduling");
         points.add("Speculation");
         points.add("Compiler Approaches");
@@ -94,20 +93,22 @@ public class CA3 extends Fragment implements pointsAdapter.PositionClick{
         String urltoLoad=null;
         switch (position){
 
-            case 0:urltoLoad="";
+            case 0:urltoLoad="https://en.wikipedia.org/wiki/Instruction-level_parallelism";
                 break;
             case 1:
-                urltoLoad="";
+                urltoLoad="https://en.wikipedia.org/wiki/Instruction_scheduling";
                 break;
-            case 2:urltoLoad="";
+            case 2:urltoLoad="http://www-ee.eng.hawaii.edu/~tep/EE461/Notes/ILP/hw_speculate.html";
                 break;
-            case 3:urltoLoad="";
+            case 3:urltoLoad="http://cs.nyu.edu/courses/fall10/V22.0436-001/lecture17.html";
                 break;
-            case 4:urltoLoad="";
+            case 4:urltoLoad="http://pages.cs.wisc.edu/~david/courses/cs838/notes/09-18-03.html";
                 break;
-            case 5:urltoLoad="";
+            case 5:urltoLoad="https://en.wikipedia.org/wiki/Multi-core_processor";
 
                 break;
+            case 6:
+                urltoLoad="https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units";
 
         }
 

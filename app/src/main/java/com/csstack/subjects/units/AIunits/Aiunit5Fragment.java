@@ -54,8 +54,7 @@ public class Aiunit5Fragment extends Fragment implements pointsAdapter.PositionC
         points.add("Machine Translation");
         points.add("Speech Recogonition");
         points.add("Robotics");
-        points.add("Hardware");
-        points.add("Perception");
+        points.add("Perception in Robotics");
         points.add("Planning ");
         points.add("Moving");
 
@@ -92,6 +91,40 @@ public class Aiunit5Fragment extends Fragment implements pointsAdapter.PositionC
 
     @Override
     public void positionClicked(int position) {
+        String urltoLoad = null;
+        switch (position) {
+
+            case 0:
+                urltoLoad = "https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence"
+                break;
+            case 1:
+                urltoLoad = "https://en.wikipedia.org/wiki/Language_model";
+
+
+                break;
+            case 2:
+                urltoLoad = "https://en.wikipedia.org/wiki/Information_retrieval"
+                break;
+            case 3:
+                urltoLoad = "https://en.wikipedia.org/wiki/Natural_language_processing";
+                break;
+            case 4:
+                urltoLoad = "https://en.wikipedia.org/wiki/Machine_translation";
+                break;
+            case 5:
+                urltoLoad = "https://en.wikipedia.org/wiki/Speech_recognition";
+                break;
+
+            case 6:
+                urltoLoad = "https://en.wikipedia.org/wiki/Robotics";
+                break;
+            case 7:
+                urltoLoad = "https://see.stanford.edu/materials/aiircs223a/handout5_robots_and_vision.pdf";
+                break;
+            showPage(urltoLoad);
+
+
+        }
 
     }
 

@@ -51,7 +51,7 @@ public class Aiunit4Fragment extends Fragment implements pointsAdapter.PositionC
         points.add("Bayes Rule");
         points.add("Bayesian Networks");
         points.add("Inference");
-        points.add("Hidden Markov Models");
+        points.add(" Markov Models");
         points.add("Types of Learning");
         points.add("Learning Decision Trees");
         points.add("Regression");
@@ -99,20 +99,54 @@ public class Aiunit4Fragment extends Fragment implements pointsAdapter.PositionC
         String urltoLoad=null;
         switch (position){
 
-            case 0:urltoLoad="";
+            case 0:urltoLoad="https://en.wikipedia.org/wiki/Probability";
                 break;
             case 1:
+                urltoLoad="https://en.wikipedia.org/wiki/Bayes%27_rule";
+                break;
+            case 2:urltoLoad="https://en.wikipedia.org/wiki/Bayesian_network";
+                break;
+            case 3:urltoLoad="https://en.wikipedia.org/wiki/Inference";
+                break;
+            case 4:urltoLoad="https://en.wikipedia.org/wiki/Markov_model";
+                break;
+            case 5:urltoLoad="https://en.wikipedia.org/wiki/Decision_tree_learning";
+                break;
+            case 6:
+                urltoLoad="https://en.wikipedia.org/wiki/Regression_analysis";
+                break;
+            case 7:
+                urltoLoad="https://en.wikipedia.org/wiki/Artificial_neural_network";
+                break;
+            case 8:
+                urltoLoad="https://en.wikipedia.org/wiki/Nonparametric_statistics";
+                break;
+            case 9:
+                urltoLoad="https://en.wikipedia.org/wiki/Support_vector_machine";
+                break;
+            case 10:
+                urltoLoad="https://en.wikipedia.org/wiki/Statistical_learning_theory";
+                break;
+            case 11:
+                urltoLoad="https://en.wikipedia.org/wiki/Expectation%E2%80%93maximization_algorithm";
+                break;
+            case 12:
+                urltoLoad="https://en.wikipedia.org/wiki/Reinforcement_learning";
+                break;
+            case 13:
                 urltoLoad="";
                 break;
-            case 2:urltoLoad="";
+            case 14:
+                urltoLoad="";
                 break;
-            case 3:urltoLoad="";
-                break;
-            case 4:urltoLoad="";
-                break;
-            case 5:urltoLoad="";
 
-                break;
+
+
+
+
+
+
+
 
         }
 
