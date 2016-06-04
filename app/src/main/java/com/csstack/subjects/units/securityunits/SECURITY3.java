@@ -47,8 +47,6 @@ public class SECURITY3 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("Threats in networks");
-        points.add("Encryption");
         points.add("Virtual Private Network");
         points.add("PKI");
         points.add("SSH,SSL,IPsec");
@@ -97,19 +95,30 @@ public class SECURITY3 extends Fragment implements pointsAdapter.PositionClick{
         String urltoLoad=null;
         switch (position){
 
-            case 0:urltoLoad="";
+            case 0:urltoLoad="https://en.wikipedia.org/wiki/Virtual_private_network";
                 break;
             case 1:
-                urltoLoad="";
+                urltoLoad="https://en.wikipedia.org/wiki/Public_key_infrastructure";
                 break;
-            case 2:urltoLoad="";
+            case 2:urltoLoad="https://en.wikipedia.org/wiki/Secure_Shell";
                 break;
-            case 3:urltoLoad="";
+            case 3:urltoLoad="https://en.wikipedia.org/wiki/Computer_access_control";
                 break;
-            case 4:urltoLoad="";
+            case 4:urltoLoad="https://en.wikipedia.org/wiki/Wireless_security";
                 break;
-            case 5:urltoLoad="";
+            case 5:urltoLoad="https://en.wikipedia.org/wiki/Honeypot_(computing)";
 
+                break;
+            case 6:urltoLoad="https://en.wikipedia.org/wiki/Traffic_flow_(computer_networking)";
+
+                break;
+            case 7:urltoLoad="https://en.wikipedia.org/wiki/Firewall_(computing)";
+
+                break;
+            case 8:urltoLoad="https://en.wikipedia.org/wiki/Intrusion_detection_system";
+
+                break;
+            case  9: urltoLoad="https://en.wikipedia.org/wiki/Email_encryption";
                 break;
 
         }

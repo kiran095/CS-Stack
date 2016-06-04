@@ -53,7 +53,6 @@ public class CA2 extends Fragment implements pointsAdapter.PositionClick{
         points.add("Hardwired and Micro programmed Control");
         points.add("Instruction Level Parallelism");
         points.add("Pipelining");
-        points.add("Pipelined Implementation");
         points.add("Hazard");
 
 
@@ -93,20 +92,27 @@ public class CA2 extends Fragment implements pointsAdapter.PositionClick{
         String urltoLoad=null;
         switch (position){
 
-            case 0:urltoLoad="";
+            case 0:urltoLoad="http://www.multiwingspan.co.uk/as2.php?page=cpu";
                 break;
             case 1:
-                urltoLoad="";
+                urltoLoad="https://en.wikipedia.org/wiki/Datapath";
                 break;
-            case 2:urltoLoad="";
+            case 2:urltoLoad="https://www.cs.umd.edu/class/sum2003/cmsc311/Notes/Overall/steps.html";
                 break;
-            case 3:urltoLoad="";
+            case 3:urltoLoad="https://en.wikipedia.org/wiki/Microcode";
                 break;
-            case 4:urltoLoad="";
+            case 4:urltoLoad="https://en.wikipedia.org/wiki/Instruction-level_parallelism";
                 break;
-            case 5:urltoLoad="";
+            case 5:urltoLoad="https://en.wikipedia.org/wiki/Pipelining_(DSP_implementation)";
 
                 break;
+            case 6:urltoLoad="https://en.wikipedia.org/wiki/Pipelining_(DSP_implementation)";
+
+                break;
+            case 7:urltoLoad="https://en.wikipedia.org/wiki/Hazard_(computer_architecture)";
+
+                break;
+
 
         }
 

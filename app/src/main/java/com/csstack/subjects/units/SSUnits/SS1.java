@@ -52,10 +52,7 @@ public class SS1 extends Fragment implements pointsAdapter.PositionClick{
         points.add("Basic Assembler Functions");
         points.add("Assembler Features");
         points.add("Assembler Design Options");
-        points.add("");
-        points.add("");
-        points.add("");
-        points.add("");
+
 
 
 
@@ -94,19 +91,14 @@ public class SS1 extends Fragment implements pointsAdapter.PositionClick{
         String urltoLoad=null;
         switch (position){
 
-            case 0:urltoLoad="";
+            case 0:urltoLoad="https://en.wikipedia.org/wiki/Machine_code";
                 break;
             case 1:
-                urltoLoad="";
+                urltoLoad="https://en.wikipedia.org/wiki/Assembly_language";
                 break;
-            case 2:urltoLoad="";
+            case 2:urltoLoad="http://www.cs.princeton.edu/courses/archive/spr11/cos217/lectures/15AssemblyFunctions.pdf";
                 break;
-            case 3:urltoLoad="";
-                break;
-            case 4:urltoLoad="";
-                break;
-            case 5:urltoLoad="";
-
+            case 3:urltoLoad="https://en.wikipedia.org/wiki/Assembly_language#Language_design";
                 break;
 
         }

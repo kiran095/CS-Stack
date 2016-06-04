@@ -47,6 +47,8 @@ public class SE4 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
+
+        // TODO: same titles in SE4 and SE5 look into it
         points.add("Software Evolution");
         points.add("Verifiation Deatils");
         points.add("Critical Systems");

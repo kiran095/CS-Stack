@@ -90,14 +90,14 @@ public class SS4 extends Fragment implements pointsAdapter.PositionClick{
         String urltoLoad=null;
         switch (position){
 
-            case 0:urltoLoad="";
+            case 0:urltoLoad="https://en.wikipedia.org/wiki/P-code_machine";
                 break;
             case 1:
-                urltoLoad="";
+                urltoLoad="https://en.wikipedia.org/wiki/Java_virtual_machine";
                 break;
-            case 2:urltoLoad="";
+            case 2:urltoLoad="https://en.wikipedia.org/wiki/Common_Language_Infrastructure";
                 break;
-            case 3:urltoLoad="";
+            case 3:urltoLoad="https://en.wikipedia.org/wiki/Dynamic_loading";
                 break;
             case 4:urltoLoad="";
                 break;

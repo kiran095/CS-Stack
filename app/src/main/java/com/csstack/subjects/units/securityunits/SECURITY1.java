@@ -46,17 +46,19 @@ public class SECURITY1 extends Fragment implements pointsAdapter.PositionClick{
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        points=new ArrayList<>(5);
+        points=new ArrayList<>(10);
         points.add("Security overivew");
         points.add("Substitution ciphers");
-        points.add("Transpositions");
         points.add("Encryption Algorithams");
+
         points.add("Data Enryption Sstandards");
         points.add("AES");
         points.add("Public Key Encryption");
+
         points.add("Cryptographc hash functions");
         points.add("Key Exchange");
         points.add("digital Signature");
+
         points.add("certificates");
 
 
@@ -96,20 +98,36 @@ public class SECURITY1 extends Fragment implements pointsAdapter.PositionClick{
         String urltoLoad=null;
         switch (position){
 
-            case 0:urltoLoad="";
+            case 0:urltoLoad="https://en.wikipedia.org/wiki/Computer_security";
                 break;
             case 1:
-                urltoLoad="";
+                urltoLoad="https://en.wikipedia.org/wiki/Substitution_cipher";
                 break;
-            case 2:urltoLoad="";
+            case 2:urltoLoad="https://en.wikipedia.org/wiki/Encryption";
                 break;
-            case 3:urltoLoad="";
+            case 3:urltoLoad="https://en.wikipedia.org/wiki/Data_Encryption_Standard";
                 break;
-            case 4:urltoLoad="";
+            case 4:urltoLoad="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard";
                 break;
-            case 5:urltoLoad="";
+            case 5:urltoLoad="https://en.wikipedia.org/wiki/Public-key_cryptography";
 
                 break;
+
+            case 6:urltoLoad="https://en.wikipedia.org/wiki/Cryptographic_hash_function";
+
+                break;
+
+            case 7:urltoLoad="https://en.wikipedia.org/wiki/Key_exchange";
+
+                break;
+            case 8:urltoLoad="https://en.wikipedia.org/wiki/Digital_signature";
+
+                break;
+            case 9:urltoLoad="https://en.wikipedia.org/wiki/Digital_signature";
+
+                break;
+
+
 
         }
 

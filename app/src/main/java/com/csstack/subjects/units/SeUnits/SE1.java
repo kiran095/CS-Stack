@@ -55,8 +55,6 @@ public class SE1 extends Fragment implements pointsAdapter.PositionClick{
         points.add("Incremental Process model");
         points.add("The RAD model");
         points.add("Sprial model");
-        points.add("Concurrent development model");
-        points.add("Specialized Process model");
         points.add("Unified Process model");
 
 
@@ -95,20 +93,33 @@ public class SE1 extends Fragment implements pointsAdapter.PositionClick{
         String urltoLoad=null;
         switch (position){
 
-            case 0:urltoLoad="";
+            case 0:urltoLoad="https://en.wikipedia.org/wiki/Software#Industry_and_organizations";
                 break;
             case 1:
-                urltoLoad="";
+                urltoLoad="https://en.wikipedia.org/wiki/Legacy_system";
                 break;
-            case 2:urltoLoad="";
+            case 2:urltoLoad="https://en.wikipedia.org/wiki/Software_development_process";
                 break;
-            case 3:urltoLoad="";
+            case 3:urltoLoad="https://en.wikipedia.org/wiki/Capability_Maturity_Model";
                 break;
-            case 4:urltoLoad="";
+            case 4:urltoLoad="https://en.wikipedia.org/wiki/Waterfall_model";
                 break;
-            case 5:urltoLoad="";
+            case 5:urltoLoad="https://en.wikipedia.org/wiki/Incremental_build_model";
 
                 break;
+            case 5:urltoLoad="https://en.wikipedia.org/wiki/Rapid_application_development";
+
+                break;
+            case 6:urltoLoad="https://en.wikipedia.org/wiki/Spiral_model";
+
+                break;
+            case 7:urltoLoad="https://en.wikipedia.org/wiki/Unified_Process";
+
+                break;
+
+
+
+
 
         }
 

@@ -91,16 +91,16 @@ public class SS5 extends Fragment implements pointsAdapter.PositionClick{
         String urltoLoad=null;
         switch (position){
 
-            case 0:urltoLoad="";
+            case 0:urltoLoad="https://en.wikipedia.org/wiki/Instruction_set#Instruction_set_implementation";
                 break;
             case 1:
-                urltoLoad="";
+                urltoLoad="https://en.wikipedia.org/wiki/Profiling_(computer_programming)";
                 break;
-            case 2:urltoLoad="";
+            case 2:urltoLoad="https://en.wikipedia.org/wiki/Grid_computing";
                 break;
-            case 3:urltoLoad="";
+            case 3:urltoLoad="https://en.wikipedia.org/wiki/Code_optimization";
                 break;
-            case 4:urltoLoad="";
+            case 4:urltoLoad="https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)";
                 break;
             case 5:urltoLoad="";
 

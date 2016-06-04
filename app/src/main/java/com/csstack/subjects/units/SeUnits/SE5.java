@@ -46,10 +46,9 @@ public class SE5 extends Fragment implements pointsAdapter.PositionClick{
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        points=new ArrayList<>(5);
+        points=new ArrayList<>(7);
       points.add("Software evolution");
         points.add("Verification and Validation");
-        points.add("-Critical Systems Validation");
         points.add("Metrics for Product-Quality Management");
         points.add("Process Improvement");
         points.add("Risk Management-");
@@ -93,18 +92,21 @@ public class SE5 extends Fragment implements pointsAdapter.PositionClick{
         String urltoLoad=null;
         switch (position){
 
-            case 0:urltoLoad="";
+            case 0:urltoLoad="https://en.wikipedia.org/wiki/Software_evolution";
                 break;
             case 1:
-                urltoLoad="";
+                urltoLoad="https://en.wikipedia.org/wiki/Software_verification_and_validation";
                 break;
-            case 2:urltoLoad="";
+            case 2:urltoLoad="https://en.wikipedia.org/wiki/Quality_management";
                 break;
-            case 3:urltoLoad="";
+            case 3:urltoLoad="https://en.wikipedia.org/wiki/Business_process_improvement";
                 break;
-            case 4:urltoLoad="";
+            case 4:urltoLoad="https://en.wikipedia.org/wiki/Risk_management";
                 break;
-            case 5:urltoLoad="";
+            case 5:urltoLoad="https://en.wikipedia.org/wiki/Configuration_management";
+
+                break;
+            case 6:urltoLoad="https://en.wikipedia.org/wiki/Cost_estimation_in_software_engineering";
 
                 break;
 

@@ -47,13 +47,11 @@ public class SS2 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("Loaders and Linkers");
-        points.add("Basic Loader Functions");
-        points.add("Machine-Dependent Loader Features");
+        points.add("Loader");
+        points.add("Linker");
         points.add("Machine-Independent Loader");
         points.add("Dynamic Linking");
         points.add("Object files");
-        points.add("designing an object format");
         points.add("Symbols and Relocation");
 
 
@@ -94,18 +92,18 @@ public class SS2 extends Fragment implements pointsAdapter.PositionClick{
         String urltoLoad=null;
         switch (position){
 
-            case 0:urltoLoad="";
+            case 0:urltoLoad="https://en.wikipedia.org/wiki/Loader_(computing)#Dynamic_linkers";
                 break;
             case 1:
-                urltoLoad="";
+                urltoLoad="https://en.wikipedia.org/wiki/Linker_(computing)";
                 break;
-            case 2:urltoLoad="";
+            case 2:urltoLoad="https://en.wikipedia.org/wiki/Cross-platform";
                 break;
-            case 3:urltoLoad="";
+            case 3:urltoLoad="https://en.wikipedia.org/wiki/Dynamic_linker";
                 break;
-            case 4:urltoLoad="";
+            case 4:urltoLoad="https://en.wikipedia.org/wiki/Object_file";
                 break;
-            case 5:urltoLoad="";
+            case 5:urltoLoad="https://en.wikipedia.org/wiki/Relocation_(computing)";
 
                 break;
 

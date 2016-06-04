@@ -47,7 +47,6 @@ public class SECURITY2 extends Fragment implements pointsAdapter.PositionClick{
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
-        points.add("Secure Programs");
         points.add("Viruses");
         points.add("Targeted Malicious code");
         points.add("Control Against Threat");
@@ -92,19 +91,16 @@ public class SECURITY2 extends Fragment implements pointsAdapter.PositionClick{
         String urltoLoad=null;
         switch (position){
 
-            case 0:urltoLoad="";
+            case 0:urltoLoad="https://en.wikipedia.org/wiki/Computer_virus";
                 break;
             case 1:
-                urltoLoad="";
+                urltoLoad="https://en.wikipedia.org/wiki/Malware";
                 break;
-            case 2:urltoLoad="";
+            case 2:urltoLoad="https://en.wikipedia.org/wiki/Authentication";
                 break;
-            case 3:urltoLoad="";
+            case 3:urltoLoad="https://kb.iu.edu/d/akln";
                 break;
-            case 4:urltoLoad="";
-                break;
-            case 5:urltoLoad="";
-
+            case 4:urltoLoad="https://web.stanford.edu/class/cs101/security-1.html";
                 break;
 
         }

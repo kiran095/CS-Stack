@@ -49,7 +49,6 @@ public class SE3 extends Fragment implements pointsAdapter.PositionClick{
         points=new ArrayList<>(5);
         points.add("Requirement Analyis");
         points.add("Design Process");
-        points.add("Design Quality");
         points.add("UI design");
         points.add("Testing Strategies");
         points.add("Validation testing");
@@ -94,18 +93,24 @@ public class SE3 extends Fragment implements pointsAdapter.PositionClick{
         String urltoLoad=null;
         switch (position){
 
-            case 0:urltoLoad="";
+            case 0:urltoLoad="https://en.wikipedia.org/wiki/Requirements_analysis";
                 break;
             case 1:
-                urltoLoad="";
+                urltoLoad="https://en.wikipedia.org/wiki/Design_process_(computing)";
                 break;
-            case 2:urltoLoad="";
+            case 2:urltoLoad="https://en.wikipedia.org/wiki/User_interface_design";
                 break;
-            case 3:urltoLoad="";
+            case 3:urltoLoad="https://en.wikipedia.org/wiki/Test_strategy";
                 break;
-            case 4:urltoLoad="";
+            case 4:urltoLoad="https://en.wikipedia.org/wiki/Acceptance_testing";
                 break;
-            case 5:urltoLoad="";
+            case 5:urltoLoad="https://en.wikipedia.org/wiki/System_testing";
+
+                break;
+            case 6:urltoLoad="https://en.wikipedia.org/wiki/Debugging";
+
+                break;
+            case 7:urltoLoad="https://en.wikipedia.org/wiki/Project_management";
 
                 break;
 

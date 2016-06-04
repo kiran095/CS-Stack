@@ -48,13 +48,10 @@ public class SS3 extends Fragment implements pointsAdapter.PositionClick{
         super.onCreate(savedInstanceState);
         points=new ArrayList<>(5);
         points.add("Macroprocessors");
-        points.add("Macroprocessors Functions");
         points.add("Machine-Independent Macro");
-        points.add("Macro Processor Design Options");
         points.add("Introduction to Virtual Machines");
         points.add("basic Interpretation");
         points.add("Threaded Interpretation");
-        points.add("Interpreting a complex");
         points.add("instruction set");
         points.add("binary translation");
 
@@ -95,18 +92,24 @@ public class SS3 extends Fragment implements pointsAdapter.PositionClick{
         String urltoLoad=null;
         switch (position){
 
-            case 0:urltoLoad="";
+            case 0:urltoLoad="https://en.wikipedia.org/wiki/General-purpose_macro_processor";
                 break;
             case 1:
-                urltoLoad="";
+                urltoLoad="https://en.wikipedia.org/wiki/Macro_(computer_science)#Macros_for_machine-independent_software";
                 break;
-            case 2:urltoLoad="";
+            case 2:urltoLoad="https://en.wikipedia.org/wiki/Virtual_machine";
                 break;
-            case 3:urltoLoad="";
+            case 3:urltoLoad="https://en.wikipedia.org/wiki/Interpreter_(computing)";
                 break;
-            case 4:urltoLoad="";
+            case 4:urltoLoad="https://en.wikipedia.org/wiki/Threaded_code";
                 break;
-            case 5:urltoLoad="";
+            case 5:urltoLoad="https://en.wikipedia.org/wiki/Instruction_set";
+
+                break;
+            case 6:urltoLoad="https://en.wikipedia.org/wiki/Instruction_set";
+
+                break;
+            case 7:urltoLoad="https://en.wikipedia.org/wiki/Binary_translation";
 
                 break;
 

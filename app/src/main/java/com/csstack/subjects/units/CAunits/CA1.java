@@ -46,7 +46,7 @@ public class CA1 extends Fragment implements pointsAdapter.PositionClick{
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        points=new ArrayList<>(5);
+        points=new ArrayList<>(8);
         points.add("Units of a Digital Computer");
         points.add("Hardware");
         points.add("Software Interface");
@@ -55,7 +55,6 @@ public class CA1 extends Fragment implements pointsAdapter.PositionClick{
         points.add("RISC and CISC Architectures");
         points.add("Performance Metrics –");
         points.add("Amdahl’s Law");
-        points.add("");
 
 
 
@@ -94,19 +93,24 @@ public class CA1 extends Fragment implements pointsAdapter.PositionClick{
         String urltoLoad=null;
         switch (position){
 
-            case 0:urltoLoad="";
+            case 0:urltoLoad="https://en.wikipedia.org/wiki/Computer_architecture";
                 break;
             case 1:
-                urltoLoad="";
+                urltoLoad="https://en.wikipedia.org/wiki/Computer_hardware";
                 break;
-            case 2:urltoLoad="";
+            case 2:urltoLoad="https://en.wikipedia.org/wiki/Application_binary_interface";
                 break;
-            case 3:urltoLoad="";
+            case 3:urltoLoad="https://en.wikipedia.org/wiki/Hardware_description_language";
                 break;
-            case 4:urltoLoad="";
+            case 4:urltoLoad="https://en.wikipedia.org/wiki/Instruction_set";
                 break;
-            case 5:urltoLoad="";
+            case 5:urltoLoad="https://en.wikipedia.org/wiki/Reduced_instruction_set_computing";
 
+                break;
+            case 6:urltoLoad="https://en.wikipedia.org/wiki/Computer_performance";
+
+                break;
+            case 7:urltoLoad="https://en.wikipedia.org/wiki/Amdahl%27s_law";
                 break;
 
         }

@@ -53,8 +53,6 @@ public class SECURITY4 extends Fragment implements pointsAdapter.PositionClick{
         points.add("Redundancy/Internal Consistency");
         points.add("Recovery");
         points.add("Concurrency");
-        points.add("sensitive data");
-        points.add("Types of Disclosures");
         points.add("Inference");
 
 
@@ -92,6 +90,7 @@ public class SECURITY4 extends Fragment implements pointsAdapter.PositionClick{
     public void positionClicked(int position) {
         Log.d("COM_CSTACK","IN fragment interface definition");
         String urltoLoad=null;
+        //TODO: update points array list here
         switch (position){
 
             case 0:urltoLoad="";
@@ -99,13 +98,19 @@ public class SECURITY4 extends Fragment implements pointsAdapter.PositionClick{
             case 1:
                 urltoLoad="";
                 break;
-            case 2:urltoLoad="";
+            case 2:urltoLoad="https://en.wikipedia.org/wiki/Two-phase_commit_protocol";
                 break;
-            case 3:urltoLoad="";
+            case 3:urltoLoad="https://en.wikipedia.org/wiki/Data_redundancy";
                 break;
-            case 4:urltoLoad="";
+            case 4:urltoLoad="https://en.wikipedia.org/wiki/Data_recovery";
                 break;
-            case 5:urltoLoad="";
+            case 5:urltoLoad="https://en.wikipedia.org/wiki/Concurrency_(computer_science)";
+
+                break;
+            case 6:urltoLoad="https://en.wikipedia.org/wiki/Inference";
+
+                break;
+            case 7:urltoLoad="";
 
                 break;
 

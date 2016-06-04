@@ -46,13 +46,12 @@ public class SE2 extends Fragment implements pointsAdapter.PositionClick{
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        points=new ArrayList<>(5);
+        points=new ArrayList<>(6);
         points.add("Planning & Modelling Practice");
         points.add("Construction Practice");
         points.add("Deployment");
         points.add("Rwquirements Engineering");
         points.add("Use case Development");
-        points.add("Analysis model");
         points.add("Validating Requirements");
 
 
@@ -91,18 +90,18 @@ public class SE2 extends Fragment implements pointsAdapter.PositionClick{
         String urltoLoad=null;
         switch (position){
 
-            case 0:urltoLoad="";
+            case 0:urltoLoad="https://en.wikipedia.org/wiki/Software_development#Planning";
                 break;
             case 1:
-                urltoLoad="";
+                urltoLoad="https://en.wikipedia.org/wiki/Software_construction";
                 break;
-            case 2:urltoLoad="";
+            case 2:urltoLoad="https://en.wikipedia.org/wiki/Software_deployment";
                 break;
-            case 3:urltoLoad="";
+            case 3:urltoLoad="https://en.wikipedia.org/wiki/Requirements_engineering";
                 break;
-            case 4:urltoLoad="";
+            case 4:urltoLoad="https://en.wikipedia.org/wiki/Use-case_analysis";
                 break;
-            case 5:urltoLoad="";
+            case 5:urltoLoad="https://en.wikipedia.org/wiki/Software_verification_and_validation";
 
                 break;
 
