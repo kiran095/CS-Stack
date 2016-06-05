@@ -108,5 +108,3 @@ public class CN1 extends Fragment implements pointsAdapter.PositionClick{
     private void showPage(String urltoLoad) {
     }
 }
-
-/* ================= */
