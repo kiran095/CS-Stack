@@ -56,9 +56,6 @@ public class CN1 extends Fragment implements pointsAdapter.PositionClick{
         points.add("Telnet");
         points.add("SSH");
         points.add("");
-
-
-
     }
 
     @Nullable
@@ -106,12 +103,8 @@ public class CN1 extends Fragment implements pointsAdapter.PositionClick{
             case 4:urltoLoad="";
                 break;
             case 5:urltoLoad="";
-
                 break;
-
         }
-
-
         showPage(urltoLoad);
     }
 
